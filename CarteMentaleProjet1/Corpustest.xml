@@ -1,0 +1,187 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE document SYSTEM "test.dtd" [
+<!ENTITY shy "">
+<!ENTITY nbsp " ">
+]>
+
+<document>
+
+   <chapitre id="C1" nbr_segments="15" nbr_sections="0">
+
+      <titre>QUE TRADUIT-ON QUAND ON TRADUIT&nbsp;?</titre>      <segment id="Seg1" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-bottom: 0cm; line-height: 150%">
+
+      
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg2" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-bottom: 0cm; line-height: 150%">
+
+    «&nbsp;Les traités de traductologie me laissent souvent sur ma faim, car l'abondance     
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg3" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-bottom: 0cm; line-height: 150%">
+
+    des arguments théoriques n'est pas illustrée par une série suffisante d'exemples.&nbsp;»   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg4" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+    Umberto ECO, 2007&nbsp;: 11.   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg5" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+      
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg6" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Que traduit-on quand on traduit&nbsp;?   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg7" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-bottom: 0cm; line-height: 150%">
+
+  	 Cet ouvrage est né de l'ambition de combler une lacune et de montrer, par les nombreux exemples sur lesquels il s'appuie dans diverses langues généralement méconnues ou trop peu citées, qu'en matière de traduction littéraire, il n'est de théorie sans pratique, ni de pratique sans théorie, qu'il n'est non plus de réflexion sur la traduction sans histoire de la traduction, ni sans théorie de la littérature, qui s'enrichissent à leur tour et se nourrissent de la pratique traductive. 
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg8" nbr_paragraphes="3">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Le traducteur, s'il fait œuvre unique, en traduisant une œuvre unique, n'est ni le seul ni le premier. Il existe dans un monde qui possède déjà son Ainsi nommée littérature avec tout son lot de représentations qui concernent donc la traduction. Le traducteur ne peut pas ignorer que sa pratique, avant même d'avoir commencé, est soumise à un certain nombre, voire à un nombre certain, d'implicites, de présupposés, de sous-entendus et de lieux communs. Au premier rang&nbsp;: l'universalisme (tout le monde a un avis autorisé sur la traduction), le relativisme (tout se vaut dans la traduction), l'empirisme (il n'y a pas de règles), le moralisme (rester modeste), le fatalisme (on ne peut pas tout traduire), l'angélisme («&nbsp;je remercie untel qui a su lire entre les lignes&nbsp;») et,  last but not least , l'insulte (les approches «&nbsp;totalitaires&nbsp;»  1  ). De ces positions, marquées par la violence et la répétitivité, il faut souligner qu'elles dominent encore de façon hégémonique les discours sur la traduction. Au traducteur d'aujourd'hui, il est sans cesse rappelé qu'il n'est pas Shakespeare, qu'il est en aval du texte original, qu'il est à son service, son serviteur, et, dès qu'il tournera le dos, qu'il n'est et ne sera jamais qu'un écrivain frustré en quête d'autorité. Bref, une sorte de passager clandestin vivant à l'ombre de chefs-d’œuvre dont il tente de tirer profit. Et en plus, il a le toupet de vouloir être rémunéré pour cela.   
+
+         </paragraphe>
+
+         <paragraphe id="P2" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Cette prise de position semble réservée au traducteur&nbsp;: si on attend encore maintenant de lui qu'il s'efface, on s'extasie devant une interprétation différente – donc non transparente — d'une œuvre musicale. À l'instar des lecteurs d'une traduction qui, dans la plupart des cas, ne sont pas bilingues et ne peuvent donc pas comparer le texte original et le texte traduit, quels amateurs de musique sont capables de vérifier dans la partition originale le rythme de ce qu'ils écoutent et qui leur plaît ? Bien peu, sans doute, et pourtant, il ne leur vient pas à l'idée que l'interprète (mot qui s'utilise aussi bien pour la musique que pour la traduction) puisse trahir le compositeur. Ni qu'ils puissent entendre un compositeur sans interprète. Si l'on songe qu'un grand nombre d'œuvres musicales ont été transcrites, et non écrites par le compositeur lui-même, on peut mesurer l'évolution étonnante du texte écrit : d'œuvre ouverte au  Moyen Âge  (et jusqu'au XIX e  siècle dans certaines cultures), que l'on peut adapter, modifier, commenter librement, on assiste à sa sacralisation, en même temps que change le statut de l'écrivain considéré comme un créateur.  Ni pur, ni soumis .   
+
+         </paragraphe>
+
+         <paragraphe id="P3" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Si nous rejetons ces  a priori  aussi agressifs qu'ignorants, ce n'est évidemment pas pour prêcher le contraire&nbsp;: nous ne prétendons pas être Shakespeare, nous n’affirmons pas savoir toujours tout traduire et nous ne cherchons pas à imposer nos théories. Notre travail s'appuie sur une certitude&nbsp;: traduire est une activité (d'enseignants, de chercheurs, de praticiens), un métier. Traducteurs des littératures coréennes et bulgare, formateurs de jeunes traducteurs, nous assumons pleinement la position réflexive qui est la nôtre, cherchant à prolonger les travaux de Walter Benjamin, Henri Meschonnic, Antoine Berman, de la sociocritique. Il ne sera pas question, ici, d'exposer les diverses conceptions et théories (ou pseudo-théories) existantes sur la traduction littéraire, mais, lorsque nous les croiserons, ce ne sera jamais sans prendre clairement parti.   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg9" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Cet ouvrage ne s'adresse donc pas aux amateurs de considérations consensuelles ou éclectiques, alliant les contraires, ni à ceux qui sont à la recherche de trucs, de passe-partout ou de boîtes à outils. Il s'adresse à ceux qui sont prêts à mettre en question les idées reçues, à commencer par les leurs, la  doxa , les clichés et les mythes dont on ne cesse, depuis l'école, de nous abreuver sur «&nbsp;l'Ainsi nommée littérature&nbsp;», la «&nbsp;poésie&nbsp;», «&nbsp;la langue poétique&nbsp;», «&nbsp;le bon français&nbsp;», etc., et que les acteurs mêmes du champ traductif (traducteurs, éditeurs, préparateurs de copie, attachés de presse et médias) reproduisent encore trop. 
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg10" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Notre approche n’est ni prescriptive, ni autoritaire. Nous cherchons simplement à définir une méthodologie du traduire, une démarche. Si autorité il y avait, ce ne pourrait être que celle du texte qui impose et génère sa lecture et les décisions de traduction. On ne plaque rien sur le texte, c’est lui qui dit et dicte. Nos principes de traduction, bien qu’affirmés et fondés sur la pratique et la réflexion, ne sont pas impératifs (tel texte exigera la traduction des noms propres, tel autre l’exclura) mais orientés par le texte à traduire. Notre seul impératif est de respecter la nature littéraire unique du texte à traduire&nbsp;: il doit garder la mémoire du travail sur la langue-littérature d’origine tout en enrichissant la langue-littérature qui l’accueille.   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg11" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-left: 2.05cm; margin-right: 1.87cm; text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Écouter ce qu’un texte fait à sa langue et qu’il est seul à lui faire […]. Il y a à faire dans la langue d’arrivée avec ses moyens ce que le texte a fait dans sa langue […]. C’est à cette seule condition que traduire est écrire. Sinon, traduire, c’est désécrire  2  . 
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg12" nbr_paragraphes="2">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Désécrit le traducteur, écrit le traduisant. 
+
+         </paragraphe>
+
+         <paragraphe id="P2" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  En conséquence, une traduction comme texte fait à sa langue quelque chose qu’elle est la seule à lui faire. On ne traduit pas Shakespeare, on écrit une traduction de Shakespeare, on ne lit pas Shakespeare, on lit une traduction de Shakespeare. Il est temps que la traduction cesse de faire semblant de ne pas être une traduction. Ou, comme le rappelle André Markowicz&nbsp;:   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg13" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="margin-left: 1.95cm; margin-right: 1.87cm; text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  On a l'impression en France qu'un lisant un bouquin de Tolstoï ou Dickens, on lit Tolstoï ou Dickens&nbsp;: mais c'est stupide&nbsp;! Pour lire Dickens, il faut lire l'anglais  3  &nbsp;! 
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg14" nbr_paragraphes="2">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  C'est nous faire les avocats d'un lourd cahier des charges, dont on peut nous reprocher la lourdeur, mais dont nous sommes les premiers à ressentir le poids. Affirmer, obéir à ces préceptes hérités de Meschonnic, ce n'est certes pas se simplifier la tâche et nous pourrions envier ceux qui, persuadés que l'on ne peut pas tout traduire, s'autorisent à ne pas tout traduire. Pour nous, on peut tout traduire d'un texte et si,  in fine , tout n'est pas traduit, c'est que nous, qui écrivons aujourd’hui, nous ne pouvons en lire que ce qui est lisible aujourd'hui.&nbsp;Ou, en une formule, on peut tout traduire, mais on ne traduit pas tout parce qu'on ne lit jamais tout.   
+
+         </paragraphe>
+
+         <paragraphe id="P2" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+  Parce qu'un texte n'en finit jamais de produire de la lecture.   
+
+         </paragraphe>
+
+      </segment>
+
+      <segment id="Seg15" nbr_paragraphes="1">
+
+         <paragraphe id="P1" style="text-indent: 1.24cm; margin-bottom: 0cm; line-height: 150%">
+
+      
+
+         </paragraphe>
+
+      </segment>
+
+   </chapitre>
+
+</document>

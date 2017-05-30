@@ -1,0 +1,36 @@
+#Unigraph
+SIZE 1440 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+16
+"<E>" 31 226 1 13 
+"" 1255 185 0 
+"<!DIC>" 219 31 1 14 
+"<E>/<t1>" 190 100 1 2 
+"\" \"+<MOT>" 388 44 1 5 
+"<réunir.V:K>+<rassembler.V:K>+<unir.V:K>+<regrouper.V:K>+<grouper.V:K>+<collecter.V:K>" 468 130 1 7 
+"." 34 17 0 
+" \" \" +<MOT>+<MOT>.<MOT>" 615 34 1 8 
+"en+dans+sur+relatif" 743 85 1 9 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 798 61 1 11 
+"<!DIC>" 1002 25 1 12 
+"<E>/<t2>" 931 35 1 10 
+"<E>/</t2>" 1093 28 1 15 
+"<E>/<composition_parties_identiques>" 105 152 1 3 
+"<E>/</t1>" 313 104 1 4 
+"<E>/</composition_parties_identiques>" 1128 104 1 1 

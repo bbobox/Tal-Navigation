@@ -1,0 +1,29 @@
+0000000001
+-1 denom1
+: 1 1 
+: 2 2 
+: 4 3 3 3 
+: 10 4 9 4 8 4 7 4 6 4 5 4 
+: 11 6 4 5 3 5 
+: 13 7 11 7 
+: 12 5 
+: 1 8 
+: 14 9 
+t 
+f 
+%<E>
+%T
+%1
+@ 
+%<MOT>
+%appeler
+%nommer
+%désigner
+%dénoter
+%dénommer
+%baptiser
+%<DET>
+%*
+%<!MOT>
+%2
+f

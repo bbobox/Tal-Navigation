@@ -1,0 +1,31 @@
+#Unigraph
+SIZE 1188 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+11
+"<E>" 70 200 1 2 
+"" 836 283 0 
+"T1" 83 92 1 3 
+"\" \"+<MOT>" 147 85 1 4 
+"<être.V>" 240 79 1 5 
+"\" \"+<MOT>" 337 82 1 6 
+"ce+le" 434 83 1 7 
+"<N>" 512 71 1 8 
+"\" \"+<MOT>+<DET*>" 620 73 1 9 
+"<!MOT>+<DET>" 714 111 1 10 
+"T2" 803 160 1 1 

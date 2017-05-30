@@ -1,0 +1,35 @@
+#Unigraph
+SIZE 1770 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+15
+"<E>" 25 261 1 2 
+"" 1260 241 0 
+"<E>/<utiliser_Y_comme_X>" 73 231 1 3 
+"<utiliser.V:P:J:G:F:T:I:K>" 118 195 1 4 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 299 231 1 5 
+"<E>/<t1>" 437 201 1 6 
+"<!DIC>" 483 196 1 7 
+"<E>/</t1>" 550 201 1 8 
+"\" \"+<MOT>" 585 194 1 9 
+"comme" 661 192 1 10 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 742 201 1 11 
+"<E>/<t2>" 897 192 1 12 
+"<!DIC>" 984 187 1 13 
+"<E>/</t2>" 1086 215 1 14 
+"<E>/</utiliser_Y_comme_X>" 1154 184 1 1 

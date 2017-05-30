@@ -1,0 +1,39 @@
+#Unigraph
+SIZE 1527 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+19
+"<E>" 38 274 1 2 
+"" 1385 254 0 
+"<E>/<X_etre_nom_groupe_Y>" 68 210 1 3 
+"<E>/<t1>" 97 102 1 4 
+"<!DIC>" 122 33 1 5 
+"<E>/</t1>" 189 107 1 6 
+"\" \"+<MOT>" 242 193 1 7 
+"<être.V:P:J:G:F:T:I>" 312 84 1 8 
+"\" \"+<ADV>+<ADV>.<ADV>" 457 47 1 18 
+"ensemble+groupe+classe+réunion+famille+collection" 623 135 1 10 
+"\" \"+<MOT>+<MOT>.<MOT>" 740 222 1 11 
+"de+du" 871 145 1 12 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 922 62 1 13 
+"<E>/<t2>" 1051 142 1 14 
+"<!DIC>" 1093 215 1 15 
+"<E>/</t2>" 1197 215 1 16 
+"<E>/</X_etre_nom_groupe_Y>" 1236 153 1 1 
+"<E>/<t2>" 1622 217 0 
+"<DET>+<PREP>" 544 146 1 9 

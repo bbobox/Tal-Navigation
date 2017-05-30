@@ -1,0 +1,456 @@
+#!/usr/bin/perl
+#
+# Nom:
+# tagen (TagEN : Tagger d'Entités Nommées)
+#
+# Auteur:
+# Jean-François Berroyer
+#
+# Date de création:
+# 24/05/2004
+#
+# Date de dernière modification:
+# 24/01/2005
+# (Julien Derivière)
+#
+# Paramètres:
+# tagen [options] [[fileconf]:[mode]] infile [outfile]
+#
+# Description:
+# tageur d'entité nomée dans un texte.
+# Voir le fichier d'aide
+#
+
+use strict;
+use Getopt::Long; # pour gérer les options
+Getopt::Long::Configure ("bundling"); # pour concaténer les options courtes
+
+
+#####################
+# Variables globales
+#
+
+# options passées en paramètres et valeur par défaut
+my $opt_yes = '';
+my $opt_exception = '';
+my $opt_verbose = 1;
+my $opt_align = '';
+my $opt_tag = '';
+
+# tableau des paramètres de configuration
+# les clé sont juste déclarées;
+# elle seront effectivement remplies par la fonction read_conf
+my %config = (
+  options => "",
+  language => "",
+  delas => "",
+  graph => "",
+  comment => "",
+);
+
+$0 =~ /(.*)\/(.*)/; # récupération du répertoire courrant et du nom du script
+my $current_rep = $1; #répertoire courrant du script
+my $script_name = $2; #nom du script
+my $filehelp = "$current_rep/help.txt"; #fichier d'aide
+my $fileconf; #fichier de configuration
+my $mode; #mode utilisé dans le fichier d'aide
+my $infile; #nom (complet) du corpus à traiter
+my $copyfile; #nom (court) du corpus à traiter
+my $outfile; #nom du fichier taggé en sortie
+my $error; #message d'erreur
+my $infile_uni; # flag. 1 si le infile est en unicode, 0 sinon
+
+
+######################################################################
+# lecture des paramètres et options
+#
+
+# Lecture des paramètres (autre que les options)
+# Pour le moment, on ne peut préciser qu'un fichier de conf et une section.
+foreach my $arg (@ARGV) {
+  # lecture du fichier de conf et du mode
+  if ($arg =~ /^-/) {} # on traite les options plus tard
+  elsif ($arg =~ /(.*):(.*)/) {
+    if (defined $fileconf) {
+      $error .= "You can't use more than one configuration file nor more than one mode.";
+    }
+    else {
+      $fileconf = $1;
+      $mode = $2;
+    }
+  }
+  # lecture du nom du texte en entrée
+  elsif (!defined $infile) {
+    $infile = $arg;
+  }
+  # nom du texte annoté en sortie
+  elsif (!defined $outfile) {
+    $outfile = $arg;
+  }
+  else {
+    $error .= "Too many parameters.";
+  }
+}
+
+#definition d'un fichier de sortie par défaut
+if ((!defined $outfile || $outfile eq "")) {
+# pour mettre l'extension .tag tout à la fin
+# $outfile = "$infile.tag";
+# pour mettre le .tag avant la dernière extension
+  if ($infile =~ /(.*)\.(.*)/) {
+    $outfile = $1.".tag".".$2";
+  }
+  else {
+    $outfile = $infile.".tag";
+  }
+}
+# définition d'un fichier de conf par défaut
+if (!defined $fileconf || $fileconf eq "") {
+  $fileconf = "$current_rep/$script_name.conf";
+}
+#definition du nom court du corpus à traiter
+if ($infile =~ m/.*\/(.*)/) {
+  $copyfile = $1; # cas ou on a un nom avec un /
+}
+else {
+  $copyfile = $infile; # cas d'un fichier dans le rep courrant
+}
+
+# sauvegarde de @ARGV avant de traiter les options
+my @ARGV_SAV = @ARGV;
+# lecture des options
+&read_options() or die "Use option --help to print the help page.\n";
+# restauration de @ARGV (pour un retraitement utlérieur des options après lecture du fichier de conf)
+@ARGV = @ARGV_SAV;
+
+# pz 15/6/2004
+# Répertoire temporaire
+my $TMPDIR =  exists($ENV{"TMPDIR"}) ?
+    $ENV{"TMPDIR"} : (exists($ENV{"TMP"}) ?
+		      $ENV{"TMP"} : "/tmp");
+
+$TMPDIR .= "/tagen$$";
+
+
+###########################################################################
+# Execution principale
+# - gestion des erreurs
+# - traitement si aucune erreur
+#
+
+if (defined $error) { #Affichage des erreurs dûes à la syntaxe de la commande
+  print STDERR "Syntax error: $error";
+  print STDERR "Use option --help to print the help page.\n";
+}
+elsif (!defined $infile) {
+  print STDERR "Syntax error: Too few parameters.\n";
+  print STDERR "Use option --help to print the help page.\n";
+}
+elsif (test_files()) {  #tests d'existance des fichiers
+  print STDERR "$error\n";
+}
+elsif (read_conf()) { # lecture du fichier de conf
+  print STDERR "$error\n";
+}
+elsif (!read_options()) {
+  print STDERR "Check the field \"options\" in mode \"$mode\" of configuration file \"$fileconf\".\n"
+}
+elsif (check_config()) { # vérification de la config
+  print STDERR "$error\n";
+}
+else {  # traitement principal
+  # teste si le fichier de sortie existe déjà
+  if (-f $outfile) {
+    my $ans; # réponse à la question
+    if (!$opt_yes) { # l'option "réponse automatique" n'est pas activée
+      print STDERR "Output file \"$outfile\" already exists !\n";
+      print STDERR "Do you want to write over ? ";
+      $ans = getc();
+      if ($ans ne "y" && $ans ne "Y" && $ans ne "o" && $ans ne "O") {
+        print STDERR "Aborted.\n";
+        exit;
+      }
+    }
+  }
+
+  # test si le fichier d'entrée est en unicode
+  $infile_uni = &is_unicode();
+
+  # pz 15/6/2004
+  # crée le répertoire temporaire si nécessaire
+  # (l'effacera de toute façon)
+  print STDERR "Creating temporary directory\n" if ($opt_verbose >= 3);
+  -d $TMPDIR || mkdir $TMPDIR;
+
+  # recopie du fichier source dans le répertoire temporaire
+  `cp $infile $TMPDIR/$copyfile`;
+
+  # conversion en unicode pour le traitement Unitex pour
+  if (!$infile_uni) {
+    print STDERR "Converting in Unicode UCS-2 Little Endian\n" if ($opt_verbose >= 3);
+    my $lang = "\U$config{'language'}";
+    `$current_rep/bin/Asc2Uni $lang $TMPDIR/$copyfile`;
+
+    # effacement de la copie en ascii
+    `rm $TMPDIR/$copyfile`;
+    # renommage de la copie en unicode (suppression de l'extension .uni)
+    rename("$TMPDIR/$copyfile.uni", "$TMPDIR/$copyfile");
+  }
+
+  # utilisation des programmes unitex
+  print STDERR "Executing Unitex\n" if ($opt_verbose >= 1);
+  unitex();
+
+  # conversion en ascii pour le post-traitement
+  print STDERR "Converting in ASCII\n" if ($opt_verbose >= 3);
+  my $lang = "\U$config{'language'}";
+  `$current_rep/bin/Uni2Asc $lang -r "$TMPDIR/$copyfile.tag"`;
+
+  # post-traitement pour supprimer les balises d'exception.
+  # (implicite avec l'option $opt_tag)
+  if ($opt_exception || $opt_tag) {
+    print STDERR "Deleting exceptions\n" if ($opt_verbose >= 1);
+    `perl $current_rep/perl/deletex.pl "$TMPDIR/$copyfile.tag"`;
+    # suppression du fichier avec balises d'exceptions
+    `rm $TMPDIR/$copyfile.tag`;
+    # remplacement de l'extention .modified par .tag
+    rename("$TMPDIR/$copyfile.tag.modified",  "$TMPDIR/$copyfile.tag");
+  }
+
+  # post-traitement pour aligner le texte avec les espaces originaux (dénormalisation)
+  # (implicicite avec l'option $opt_tag)
+  if ($opt_align || $opt_tag) {
+    print STDERR "Aligning with source text\n" if ($opt_verbose >= 1);
+    # alignement des blancs
+    `$current_rep/bin/Align $TMPDIR/$copyfile.tag $infile $TMPDIR/$copyfile.align`;
+    # repositionnement des balises autour des mots
+    `perl $current_rep/perl/movetag.pl $TMPDIR/$copyfile.align $TMPDIR/$copyfile.align2`;
+    # suppression des anciens fichiers
+    `rm $TMPDIR/$copyfile.tag`;
+    `rm $TMPDIR/$copyfile.align`;
+    # remplacement de l'extention .align par .tag
+    rename("$TMPDIR/$copyfile.align2",  "$TMPDIR/$copyfile.tag");
+  }
+
+  # option pour obtenir la listes des tags avec leurs offsets à la place du texte balisé
+  if ($opt_tag) {
+    print STDERR "Extracting tags\n" if ($opt_verbose >= 1);
+    `perl $current_rep/perl/extag.pl $TMPDIR/$copyfile.tag $TMPDIR/$copyfile.tag.list`;
+    # Suppression de l'ancien fichier
+    `rm $TMPDIR/$copyfile.tag`;
+    # remplacement de l'extension
+    rename("$TMPDIR/$copyfile.tag.list",  "$TMPDIR/$copyfile.tag");
+  }
+  else {
+    # reconversion éventuelle en Unicode du fichier annoté (si le fichier original était en unicode)
+    if ($infile_uni) {
+      print STDERR "Converting in Unicode UCS-2 Little Endian\n" if ($opt_verbose >= 3);
+      my $lang = "\U$config{'language'}";
+      `$current_rep/bin/Asc2Uni $lang $TMPDIR/$copyfile.tag`;
+      # effacement de la copie en ascii
+      `rm $TMPDIR/$copyfile`;
+      # renommage de la copie en unicode (suppression de l'extension .uni)
+      rename("$TMPDIR/$copyfile.uni", "$TMPDIR/$copyfile.tag");
+    }
+  }
+
+  # copie du texte annoté
+  `cp $TMPDIR/$copyfile.tag $outfile`;
+
+  # destruction du répertoire temporaire
+  print STDERR "Deleting temporary directory\n" if ($opt_verbose >= 3);
+  `rm -r -f $TMPDIR/*`;
+  rmdir $TMPDIR;
+}
+
+
+#######################
+# Fonctions du script #
+#######################
+
+sub read_options {
+  # Lecture des options. On inclu les options venant fichier de conf.
+  # Ces options ne sont pas prioritaires sur celle passées en argument
+  unshift (@ARGV, split(/\s+/, $config{options}));
+  return GetOptions (
+    "help|h|?" => sub { &print_help(); exit; },
+    "mode|modes|m" => sub {&print_modes(); exit; },
+    "align|a" => \$opt_align,
+    "exception|exceptions|e" => \$opt_exception,
+    "question|ask|q" => sub { $opt_yes = 0; },
+    "silent|quiet|s" => sub { $opt_verbose = 0; },
+    "tag|tags|t" => sub { $opt_tag = 1; },
+    "verbose|v" => sub { $opt_verbose = 2; },
+    "Verbose|V" => sub { $opt_verbose = 3; },
+    "yes|y" => \$opt_yes,
+  );
+}
+
+# cette fonction teste l'existance des fichiers passés en paramètre
+# Elle retourne 0 si tout est correcte, un code d'erreur sinon
+# Dans le cas ou le fichier de sortie existe déjà, elle demande à l'utilisateur s'il veut l'écraser
+# Si l'option answer est à yes, la réponse par défaut sera oui (la question n'est pas posée)
+#
+sub test_files {
+  # test si le fichier de conf existe
+  if (!-f $fileconf) {
+    $error = "Configuration file \"$fileconf\" doesn't exist.";
+    return 1;
+  }
+  # test si le fichier d'entrée existe
+  if (!-f $infile) {
+    $error = "Input file \"$infile\" doesn't exist.";
+    return 2;
+  }
+  return 0;
+}
+
+# cette fonction lit le mode choisit dans le fichier de configuration
+# Elle retourne 0 si tout est correcte, un code d'erreur sinon
+# Une erreur se produit si le mode n'existe pas n'existe pas
+# Ou si un attribut de configuration n'est pas définit dans le tableau %config
+sub read_conf {
+  my $return = 0; # valeur de retour
+  my $line;
+  open (FILECONF, $fileconf);
+  if ($mode ne "") { # cas d'un mode spécifique (pas par défaut)
+    # on lit le fichier jusqu'à trouver le mode
+    do {
+      $line = <FILECONF>;
+      if (eof(FILECONF)) {
+        $error .= "Undefined mode \"$mode\" in configuration file \"$fileconf\".\n";
+        $error .= "Use option --mode to display availables modes.";
+        $return = 1
+      }
+    } while (!($line =~ /$mode\s*:\s*/) && !eof(FILECONF));
+  }
+  # on lit le fichier jusqu'au prochain mode définit
+  while (($line=<FILECONF>) && !($line =~ /:/)) {
+    # si la ligne n'est qu'un commentaire
+    if ($line =~ /\s*#/) {}
+    elsif ($line =~ /(\w*)\s*=\s*(.*)#?/) {
+      # vérification de l'existance de la clé dans %config
+      if (!defined $config{$1})  {
+        $error .= "Unknown field \"$1\" in mode \"$mode\" of configuration file \"$fileconf\".\n";
+        $return = 2;
+      }
+      else {$config{$1} = $2;}
+    }
+  }
+  close FILECONF;
+  chomp $error;
+  return $return;
+}
+
+# Cette fonction vérifie que tous les paramètres necessaires du tableau config sont bien présent.
+# Elle renvoie 0 si oui, un code d'erreur sinon
+sub check_config {
+  # note: les codes d'erreur sont les puissances de 2 et sont additionnés
+  my $return = 0; #valeur de retour
+  if ($config{'delas'} eq "") {
+    $error .= "Required field \"delas\" in mode \"$mode\" of configuration file \"$fileconf\".\n";
+    $return += 1;
+  }
+  if ($config{'graph'} eq "") {
+    $error .= "Required field \"graph\" in mode \"$mode\" of configuration file \"$fileconf\".\n";
+    $return += 2;
+  }
+  if ($config{'language'} eq "") {
+    $error .= "Required field \"language\" in mode \"$mode\" of configuration file \"$fileconf\".\n";
+    $return += 4;
+  }
+  chomp $error if ($return);
+  return $return;
+}
+
+# Cette fonction teste si le fichier $infile est en ucs2le
+# Elle l'ouvre pour celà en lecture en ascii et regarde les 2 premiers caractères
+# le fichier est ensuite refermé.
+# Elle renvoie 1 si le fichier est en ucs2le, 0 sinon
+sub is_unicode {
+  open (INPUT, $infile);
+  my $return;
+  if (<INPUT> =~ /^ÿþ/) {
+    $return = 1;
+  }
+  else {
+    $return = 0;
+  }
+  close INPUT;
+  return $return;
+}
+
+
+# Cette fonction affiche le contenu du fichier help
+sub print_help {
+  system "perl $current_rep/perl/justify.pl $filehelp | less -P \"HELP -- Press RETURN for more, or q when done\"";
+}
+
+# cette option affiches les modes disponibles dans le fichiers de conf selectionné
+# elle retourne 1 normalement, 0 en cas d'erreur
+# TODO: si un mode à été passé en paramètre, afficher toutes les caractéristiques de
+# ce mode au lieux de la liste de tous les modes
+sub print_modes() {
+  open (FILECONF, $fileconf);
+  my $flag = 1;
+  print STDERR "Available modes in configuration file \"$fileconf\" :";
+  while (<FILECONF>) {
+    if ($_ =~ /=/ && $flag) {
+      $flag = 0;
+      print STDERR "\n\t";
+    }
+    elsif ($_ =~ /(\w*)\s*:/) {
+      $flag = 0;
+      print STDERR "\n\t$1";
+    }
+    if ($_ =~ /comment\s*=\s*(.*)#?/) {
+      print STDERR "\t:\t$1";
+    }
+  }
+  if ($flag) {
+      print STDERR "\n\t-- no mode --";
+  }
+  print STDERR "\n";
+  close FILECONF;
+}
+
+# cette fonction applique les programmes unitex
+# voir la doc unitex
+# Elle produit un fichier $infile.tag dans le répertoire temp
+sub unitex {
+  # création du répertoire _snt associée
+  $copyfile =~ m/(.*)\.\w/;
+  my $infile_no_ext = $1; # nom du fichier d'entrée sans l'extension
+  my $rep = "$TMPDIR/$infile_no_ext"."_snt";
+  if (!-e $rep) { `mkdir $rep`};
+
+  # normalisation des séparateurs
+  print STDERR "\tNormalize\n" if ($opt_verbose >= 2);
+  `$current_rep/bin/Normalize "$TMPDIR/$copyfile"`;
+
+  # tokenisation
+  print STDERR "\tTokenize\n" if ($opt_verbose >= 2);
+  # nom du répertoire unitex correspondant à la langue
+  my $lang_rep = "$current_rep/unitex/".ucfirst($config{"language"});
+  `$current_rep/bin/Tokenize "$TMPDIR/$infile_no_ext.snt" "$lang_rep/Alphabet.txt"`;
+
+  # Application des dictionnaires
+  print STDERR "\tDico\n" if ($opt_verbose >= 2);
+  my $dico_list = "\"$lang_rep/Dela/".join(".bin\" \"$lang_rep/Dela/", split(/\s+/, $config{delas})).'.bin"';
+  `$current_rep/bin/Dico "$TMPDIR/$infile_no_ext.snt" "$lang_rep/Alphabet.txt" $dico_list`;
+  #tri des dictionnaires obtenus
+  my $snt_rep = "$TMPDIR/$infile_no_ext"."_snt";
+  `$current_rep/bin/SortTxt "$snt_rep/dlf" -y -l $snt_rep/dlf.n -o "$lang_rep/Alphabet_sort.txt"`;
+  `$current_rep/bin/SortTxt "$snt_rep/dlc" -y -l $snt_rep/dlc.n -o "$lang_rep/Alphabet_sort.txt"`;
+  `$current_rep/bin/SortTxt "$snt_rep/err" -y -l $snt_rep/err.n -o "$lang_rep/Alphabet_sort.txt"`;
+
+  # Application du graphe
+  my $graph = $config{graph};
+  print STDERR "\tLocate\n" if ($opt_verbose >= 2);
+  `$current_rep/bin/Locate "$TMPDIR/$infile_no_ext.snt" "$lang_rep/Graphs/$graph.fst2" "$lang_rep/Alphabet.txt" l m all`;
+  print STDERR "\tConcord\n" if ($opt_verbose >= 2);
+  `$current_rep/bin/Concord "$snt_rep/concord.ind" NULL 0 0 0 NULL "$TMPDIR/$copyfile.tag" NULL`;
+}
+
+
+

@@ -1,0 +1,37 @@
+# Disclaimer:
+#
+# Ceci n'est pas un makefile!
+# Il s'agit d'une version modifiée du script make_exe d'Unitex1.1
+# qui produit les programmes executables nécessaires à tagen.
+# Les source de cette version d'Unitex sont assez étranges
+# avec des instructions comme: #include source.cpp
+#
+# Comme il n'y a nulle part de documentation sur la dépendance des fichiers
+# tous les fichiers sources .cpp et .h d'Unitex1.1 ont été inclus
+# Il y a donc des codes sources inutiles...
+#
+# Seul le fichier Align.cpp qui produit le programme Align
+# ne fait pas partie de la suite Unitex
+#
+# Il semble que la version 1.2 évolue vers un style plus conventionnel
+# avec des fichiers sources mieux organisés un "vrai" makefile
+#
+echo Making Align
+g++ ../src/Align.cpp -o ../bin/Align
+echo Making Asc2Uni
+g++ ../src/Asc2Uni.cpp -o ../bin/Asc2Uni
+echo Making Concord
+g++ ../src/Concord.cpp -o ../bin/Concord
+echo Making Dico
+g++ ../src/Dico.cpp -o ../bin/Dico
+echo Making Locate
+g++ ../src/Locate.cpp -o ../bin/Locate
+echo Making Normalize
+g++ ../src/Normalize.cpp -o ../bin/Normalize
+echo Making SortTxt
+g++ ../src/SortTxt.cpp -o ../bin/SortTxt
+echo Making Tokenize
+g++ ../src/Tokenize.cpp -o ../bin/Tokenize
+echo Making Uni2Asc
+g++ ../src/Uni2Asc.cpp -o ../bin/Uni2Asc
+echo Done.

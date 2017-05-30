@@ -1,0 +1,42 @@
+#Unigraph
+SIZE 1770 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+22
+"<E>" 64 305 1 2 
+"" 1485 278 0 
+"<E>/<inclusion2_X_Y>" 91 306 1 3 
+"dans+au" 112 212 1 4 
+"\" \"+<DET>" 165 211 1 5 
+"ensemble+nombre" 246 211 1 6 
+"<PREP>" 337 209 1 7 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 420 208 1 8 
+"<E>/<t1>" 563 167 1 9 
+"<!DIC>" 599 164 1 10 
+"<E>/</t1>" 670 164 1 19 
+" \" \"+<MOT>+<DET>*.<!MOT>+<DET>" 744 157 1 12 
+"<E>/<t2>" 887 164 1 13 
+"<!DIC>" 934 160 1 14 
+"<E>/</t2>" 1013 165 1 15 
+"\" \"+<MOT>" 1080 207 1 16 
+"<V:T:P:G:F:J:C:S:I>" 1163 151 1 17 
+"<E>" 1325 207 1 18 
+"<E>/</inclusion2_X_Y>" 1389 189 1 1 
+"\" \"+<MOT>" 694 51 1 20 
+"," 770 53 1 21 
+"<DET>" 819 39 1 11 

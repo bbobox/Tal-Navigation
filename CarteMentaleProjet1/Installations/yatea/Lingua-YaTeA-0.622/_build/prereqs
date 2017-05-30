@@ -1,0 +1,27 @@
+do{ my $x = {
+       'build_requires' => {
+                             'Test::More' => '0.62',
+                             'Module::Build' => '0.28'
+                           },
+       'conflicts' => {},
+       'requires' => {
+                       'Scalar::Util' => 0,
+                       'Pod::Usage' => 0,
+                       'NEXT' => 0,
+                       'Test::Pod' => 0,
+                       'Encode' => 0,
+                       'File::Compare' => 0,
+                       'POSIX' => 0,
+                       'Config::General' => '2.3',
+                       'File::Path' => 0,
+                       'Getopt::Long' => 0,
+                       'Test::Pod::Coverage' => 0,
+                       'Module::Build::Compat' => 0,
+                       'Data::Dumper' => 0,
+                       'Parse::Yapp' => 0,
+                       'Test::More' => '0.62',
+                       'perl' => '5.005'
+                     },
+       'recommends' => {}
+     };
+$x; }

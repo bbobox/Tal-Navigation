@@ -1,0 +1,60 @@
+0000000001
+-1 X_etre_decompose_en_Y
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 5 5 
+: 7 6 6 6 
+: 21 7 20 7 19 7 18 7 17 7 16 7 15 7 14 7 13 7 12 7 11 7 10 7 9 7 8 7 
+: 22 9 7 8 6 8 
+: 25 10 
+: 7 11 
+: 26 13 7 12 6 12 
+: 23 14 
+: 31 15 
+: 27 17 23 16 
+: 7 18 
+: 3 19 
+: 29 20 
+: 23 21 
+: 24 8 
+: 32 22 
+: 30 12 
+: 28 12 
+t 
+f 
+%<E>
+%<E>/<X_etre_decompose_en_Y>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+%<être:V:P:J:G:F:T:I>
+@ 
+%<MOT>
+%<analyser.V:G>
+%<décomposer.V:G>
+%<démembrer.V:G>
+%<désassembler.V:G>
+%<disjoindre.V:G>
+%<dissocier.V:G>
+%<désagréger.V:G>
+%<séparer.V:G>
+%<découper.V:G>
+%<partager.V:G>
+%<trancher.V:G>
+%<diviser.V:G>
+%<fractionner.V:G>
+%<fragmenter.V:G>
+%(
+%.
+%)
+%en
+%<DET>
+%*
+%<!MOT>
+%T
+%2
+%<E>/<t2>
+%<E>/</t2>
+f

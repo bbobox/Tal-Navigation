@@ -1,0 +1,22 @@
+# Inflected form	Frequency	DDW
+<timex><date>11 novembre	2</date></timex>	0
+termes du Corpus	1	0
+<enamex><organization>Maison communale</organization></enamex> du <timex><date>11 novembre	1</date></timex>	0
+etiquetage morpho	1	0
+anciens combattants	1	0
+<enamex><organization>Maison communale</organization></enamex>	1	0
+extration des mots	1	0
+texte de Test	1	0
+quatres logiciels	1	0
+maire de la ville	1	0
+relation de definition	1	0
+Sequencage des phrasesse	1	0
+etapesn suivantes	1	0
+nom de la rue de <enamex><location>Paris</location></enamex>	1	0
+mardi 11	1	0
+rue du <timex><date>11 novembre	1</date></timex>	0
+nom de la rue	<timex><date>1	0
+novembre 2018</date></timex>.	1	0
+grande cérémonie	1	0
+<timex><date>mardi 11 novembre	1</date></timex>	0
+etiquetage morpho Syntaxique	1	0

@@ -1,0 +1,102 @@
+<!-- document -->
+
+<!ELEMENT document (chapitre*)>
+
+
+<!ELEMENT chapitre (titre,segment*,section*)>
+<!ATTLIST chapitre id CDATA #REQUIRED>
+<!ATTLIST chapitre nbr_segments CDATA #REQUIRED> 
+<!ATTLIST chapitre nbr_sections CDATA #REQUIRED>
+
+
+<!ELEMENT titre (#PCDATA)>
+
+
+<!-- segment -->
+
+<!ELEMENT segment (paragraphe+)>
+<!ATTLIST segment id CDATA #REQUIRED>
+<!ATTLIST segment nbr_paragraphes CDATA #REQUIRED>
+
+<!-- paragraphe -->
+
+<!ELEMENT paragraphe (#PCDATA)>
+
+<!ATTLIST paragraphe id CDATA #REQUIRED>
+
+<!ATTLIST paragraphe style CDATA #REQUIRED>
+
+
+<!-- section -->
+
+<!ELEMENT section (titre,segment*,sous_section*)>
+
+<!ATTLIST section id CDATA #REQUIRED>
+
+<!ELEMENT titre (#PCDATA)>
+
+
+<!-- segment -->
+
+<!ELEMENT segment (paragraphe+)>
+<!ATTLIST segment id CDATA #REQUIRED>
+<!ATTLIST segment nbr_paragraphes CDATA #REQUIRED>
+
+<!-- paragraphe -->
+
+<!ELEMENT paragraphe (#PCDATA)>
+
+<!ATTLIST paragraphe id CDATA #REQUIRED>
+
+<!ATTLIST paragraphe style CDATA #REQUIRED>
+
+
+<!-- sous_section -->
+
+<!ELEMENT sous_section (id,titre,segment*)>
+
+<!ATTLIST sous_section id CDATA #REQUIRED>
+
+<!ELEMENT titre (#PCDATA)>
+
+
+<!-- segment -->
+
+<!ELEMENT segment (paragraphe+)>
+<!ATTLIST segment id CDATA #REQUIRED>
+<!ATTLIST segment nbr_paragraphes CDATA #REQUIRED>
+
+<!-- paragraphe -->
+
+<!ELEMENT paragraphe (#PCDATA)>
+
+<!ATTLIST paragraphe id CDATA #REQUIRED>
+
+<!ATTLIST paragraphe style CDATA #REQUIRED>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

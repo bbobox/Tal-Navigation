@@ -1,0 +1,12 @@
+d000000001
+-1 Contractions/home/etudiant/workspace/Unitex-GramLab/Unitex/French/Graphs/Normalization/Contractions.grf
+: 5 1 4 1 3 1 2 1 1 1 
+t 
+f 
+%<E>
+%du/{de,.PREP+z1} {le,.DET+z1:ms} 1:2:0du
+%audit/{à,.PREP+z1} {ledit,.A+z2:ms} 1:4:0audit
+%des/{de,.PREP+z1} {les,le.DET+z1:mp:fp}1:9:0des
+%au/{à,.PREP+z1} {le,.DET+z1:ms} 1:10:0au
+%aux/{à,.PREP+z1} {les,le.DET+z1:mp:fp}1:13:0aux
+f

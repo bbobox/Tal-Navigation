@@ -1,0 +1,207 @@
+TAGEN MANUAL
+
+NAME
+		TagEN - "Tagger d'Entités Nommées" (Named Entities Tagger)
+
+SYNOPSIS
+		tagen [OPTIONS] [[CONFIG]:[MODE]] INFILE [OUTFILE]
+
+	OPTIONS	:	options of tagen. See the options' section behind.
+	CONFIG	:	configuration file
+	MODE	:	specific section defined in the configuration file
+	INFILE	:	text file to be tagged
+	OUTFILE	:	tagged text file created by the program
+
+
+OVERVIEW
+
+	DESCRIPTION
+		a brief overview of the tool
+
+	INSTALLATION
+		installing TagEN tool before using it
+
+	UTILISATION
+		how to use the command
+
+	OPTIONS
+		list of all the available options
+
+	CONTENT OF TAGEN'S DIRECTORY
+		description of the structure of TagEN's directory
+
+	FORMATS OF THE FILES
+		formats of input file, output file and configuration file
+
+	STRUCTURE OF THE CONFIGURATION FILE
+		describes the content of the configuration file
+
+	UNITEX GRAPHS AND DICTIONARIES
+		what to do with Unitex' dictionaries and graphs
+
+	BUGS & TODO
+        	warnings and ideas for TagEN
+
+
+DESCRIPTION
+
+	TagEN is a tool that uses some of Unitex'programs and others to tag the named entities that occur in a text. Named Entities are recognized boss by referring to dictionaries and by pattern matching; Unitex is specially designed to create and compile graphically such dictionaries and grammatical rules, and to process texts by applying them.
+
+	Looking for named entities in  a text is very dependant on which domain the text is linked; it depends also on the language that is used. That the reason why TagEN allows to define specific configurations that gather grammars and specific dictionaries. This configurations can be saved in a configuration file and loaded dynamically when executing TagEN.
+
+
+INSTALLATION
+
+	Copy the tagen directory and all its content where you want, for example on your home directory.
+
+	Give the execution right to the main script with the command "chmod +x ~/tagen/tagen". (Note that if you have installed TagEN in an other directory than your home directory, you must indicate instead of ~)
+
+	You can create an alias by typing "alias tagen=~/tagen/tagen" or by writing this line in your .bashrc file
+
+	You must have perl installed on your system before using TagEN. Type "perl -v" to check it.
+
+
+UTILISATION
+
+	As parameters, TagEN takes the name of the configuration file and of the specific mode that will be applied, the name of the original text file that has to be tagged, and the name of the tagged file that will be produced as output
+	The name of the configuration file and the name of the mode used must be concatenated to each other with the symbol ':' like this: 'fileconf:mode'.
+
+	Only the name of the input file is necessary. All other parameters are optional.
+	If  no name is specified as output file, tagen will create a file having the same name as the input file and the extension .tag
+	If  no name is specified for configuration file, tagen will use the file tagen.conf that is located at the root of the tagen directory.
+	If no name is specified for the mode, tagen will use the default mode of the configuration file (See the structure of the configuration file behind)
+
+	Note that the symbol ':' is always required after the configuration file name, even if no mode is specified, and always required before the mode too, even if no configuration file name is specified. So, symbol ':' can be omitted only if the default configuration file and the default mode are to be simultaneously used.
+
+
+OPTIONS
+
+--align -a		Restore the spaces and carriage return characters from
+			the initial text. When they are processed by Unitex,
+			texts are normalized, that is to say all succession of
+			spaces and tabulations are replaced by a single spaces
+			and all succession of spaces, tabulations and carriage
+			return are replaced by a single carriage return.
+			This option restores the original page make-up.
+
+--ask			See the option --question bellow.
+
+--exception -e		Delete exception tags and all tags surrounding
+			them. Exception tag are tag like <!except>. This
+			option will remove from text all pair of tags
+			(like <tag> and </tag>) if an exception tag
+			occurs between them.
+
+--help -h		Display this help file.
+
+--mode -m		Display the modes available in the configuration file
+			that have been specified (the name of the specified
+                        configuration file must be followed by ':')
+
+--question -q		Make the program ask user before performing critical
+			actions like overwriting a file. (the option --ask has
+                        the same effect)
+
+--silent -s		Do not display any informations when running.
+
+--verbose -v		Display more informations when running.
+
+--Verbose -V		Even more verbosity
+
+--yes -y		Automatically answer 'yes' to questions like
+			'Do you want to write over ?'
+			(if the output file specified already exists)
+
+	Note that single-character options can be bundled. For example, the option -easy will delete exceptions, align the tagged text with the original, produce no output, and automatically answer 'yes' to any question.
+
+	A set of options can be associated with a mode. See the section STRUCTURE OF A CONFIGURATION FILE bellow to see how to do. Such options will be applied unless an other concurrent option is explicitly given as parameter. For example, if the option --yes is defined in a specific mode :myMode, TagEN will overwrite the output file without asking the user whenever :myMode is used; but if the user explicitly call the --ask option, TagEN will ask user before overwriting even when using the :myMode mode.
+
+
+CONTENT OF TAGEN DIRECTORY
+
+tagen : root directory
+|
++-- bin		: directory with all binary programs
+|
++-- perl	: directory with all Perl scripts
+|
++-- unitex	: directory storing Unitex compiled files.
+|   |
+|   +-- English	: English sub directory
+|   |   |
+|   |   +-- Dela	: Directory with compiled dictionaries
+|   |   |
+|   |   +-- Graphs	: Directory with compiled graphs
+|   |   |
+|   |   ...
+|   |
+|   +-- French	: French sub directory
+|   |   |
+|   |   ...
+|   ...
+|
++-- tagen	: main script
+|
++-- tagen.conf	: default configuration file
+|
++-- help.txt	: this help file
+
+
+FORMATS OF THE FILES
+
+	The input file can be an ASCII file or an Unicode file encoded in USC2 Little Endian. The output file will be in the same format than the input file. Note that Unitex deals only with Unicode files, but TagEN performs automatically the conversions.
+
+The configuration file must be an ASCII file. Its structure is described in the following paragraph.
+
+
+STRUCTURE OF THE CONFIGURATION FILE
+
+	The configuration file can have several sections, each one corresponding to a different mode. A section begin with the name of the mode followed by the symbol ':' on a single line.
+
+Each line of a section is an instruction like:
+	key = value
+or
+	key = list of values
+
+The elements of a list of values must be separated by spaces or tabulations.
+
+	There are two sort of keys: necessary keys and optional keys.
+
+Here is the list and the descriptions of the necessary keys:
+
+	language	language which is used (French, English...).
+	graph		name of the graph that will be applied
+	delas		list of the dictionaries that will be used
+
+Note that the names of the graph and of the dictionaries must match with the name of a file in the the 'graph' or 'dela' subdirectory of the directory corresponding to the language which is used. The extension (.fst2, .bin, .inf) must NOT be indicate, neither the path of the file.
+
+Here is the list and the descriptions of the optional keys:
+	comment		comment of the mode (will be be displayed with --mode)
+        options		default options for the mode (See the OPTIONS section)
+
+	It is possible to put comments in the configuration file by using the special character #. As in Perl, whatever is following  # on a line is taken as a comment.
+
+
+UNITEX GRAPHS AND DICTIONARIES
+
+	The graphs and the dictionaries used to tag the named entities of a text are created by the free software Unitex that can be download at http://www-igm.univ-mlv.fr/~unitex/. Refer to the documentation of Unitex to see how to create and to compile Unitex' grammars and dictionaries.
+
+	The compiled files, with the extension .fst2 for graphs, .bin and .inf for the dictionaries, have to be copied in the Right sub directory of Unitex directory (see the section above untitled 'Content of tagen's directory'). The TagEN's Unitex directory structure is quite similar to the root directory of the Unitex software.
+
+	Tagen will search graphs and dictionaries into the language sub directory corresponding to the language defined in the selected mode of the configuration file. When indicating a graph or a dictionary in the configuration file, do not specify the extension of the file.
+
+
+BUGS & TODO
+
+	The option --align doesn't works if the carriage return in the original text are encoded with the two characters CR-LF (Windows) rather than the single character CR (Unix).
+
+	The syntax of the configuration file is not checked.
+
+        If a graph or dictionary or a language given in the configuration file doesn't exist, the Unitex'programs would produce error. A checking should be done before calling to Unitex'programs.
+
+
+AUTHOR
+	Jean-François BERROYER
+
+
+Version 1.0		17 June 2004

@@ -1,0 +1,68 @@
+if: Dominique Combe
+pos: NAM NAM
+lf: Dominique INFunknownSUP
+is a term candidate: 1
+parsing method: PATTERN_MATCHING
+forest:  number of trees: 1
+	T1: ( Dominique<=H> Combe<=M> )
+islands: 0
+
+-----------------
+
+if: UniversitÃ© Paris IV-Sorbonne Patrick Labarthe
+pos: NAM NAM NAM NAM NAM
+lf: INFunknownSUP Paris INFunknownSUP Patrick INFunknownSUP
+is a term candidate: 0
+islands: 0
+
+-----------------
+
+if: Ãcole Normale SupÃ©rieure AndrÃ© Guyaux
+pos: NAM NAM NAM NAM NAM
+lf: INFunknownSUP INFunknownSUP INFunknownSUP AndrÃ© INFunknownSUP
+is a term candidate: 0
+islands: 0
+
+-----------------
+
+if: UniversitÃ© Paris IV-Sorbonne Bertrand Marchal
+pos: NAM NAM NAM NAM NAM
+lf: INFunknownSUP Paris INFunknownSUP Bertrand INFunknownSUP
+is a term candidate: 0
+islands: 0
+
+-----------------
+
+if: UniversitÃ© de Zurich Ãve Morisi
+pos: NAM de NAM NAM NAM
+lf: INFunknownSUP de Zurich Ãve INFunknownSUP
+is a term candidate: 0
+islands: 0
+
+-----------------
+
+if: ComitÃ© scientifique
+pos: NOM ADJ
+lf: comitÃ© scientifique
+is a term candidate: 1
+parsing method: PATTERN_MATCHING
+forest:  number of trees: 1
+	T1: ( Comité<=H> scientifique<=M> )
+islands: 0
+
+-----------------
+
+if: Oxford
+pos: NAM
+lf: Oxford
+is a term candidate: 0
+
+-----------------
+
+if: University
+pos: NAM
+lf: INFunknownSUP
+is a term candidate: 0
+
+-----------------
+

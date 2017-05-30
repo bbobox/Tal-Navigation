@@ -1,0 +1,36 @@
+#Unigraph
+SIZE 1581 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+16
+"<E>" 39 214 1 2 
+"" 1352 176 0 
+"<E>/<X_etre_decompose_en_Y>" 65 177 1 3 
+"<E>/<t1>" 111 94 1 4 
+"<!DIC>" 144 66 1 5 
+"<E>/</t1>" 211 105 1 6 
+"<être:V:P:J:G:F:T:I>" 242 108 1 7 
+"\" \"+<MOT>" 388 57 1 8 
+"<analyser.V:G>+<décomposer.V:G>+<démembrer.V:G>+<désassembler.V:G>+<disjoindre.V:G>+<dissocier.V:G>+<désagréger.V:G>+<séparer.V:G>+<découper.V:G>+<partager.V:G>+<trancher.V:G>+<diviser.V:G>+<fractionner.V:G>+<fragmenter.V:G>" 473 138 1 9 
+"\" \" +<MOT>+(<MOT>.<MOT>)" 660 57 1 10 
+"en" 798 169 1 11 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>.T2" 874 107 1 13 
+"<!DIC>" 1097 147 1 14 
+"<E>/<t2>" 1059 144 1 12 
+"<E>/</t2>" 1163 180 1 15 
+"<E>/</X_etre_decompose_en_Y>" 1241 176 1 1 

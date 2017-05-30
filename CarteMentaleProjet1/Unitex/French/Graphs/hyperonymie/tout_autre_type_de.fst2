@@ -1,0 +1,45 @@
+0000000001
+-1 tout_autre_type_de
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 7 6 
+: 8 7 
+: 14 8 13 8 12 8 11 8 10 8 9 8 
+: 18 9 
+: 19 11 6 10 5 10 
+: 15 12 
+: 20 13 15 12 
+: 3 14 
+: 21 15 
+: 16 16 
+: 22 10 
+: 17 17 
+t 
+f 
+%<E>
+%<E>/<tout_autre_type_de>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%tout
+%autre
+%sorte
+%type
+%genre
+%style
+%variété
+%espèce
+%<E>/<t2>
+%<E>/</t2>
+%<E>/</tout_autre_type_de>
+%de
+%<DET>
+%*
+%.
+%<!MOT>
+f

@@ -1,0 +1,37 @@
+#Unigraph
+SIZE 1770 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+17
+"<E>" 70 200 1 2 
+"" 1312 147 0 
+"<E>/<tout_X_est_un_Y>" 110 202 1 3 
+"tout" 140 149 1 4 
+"<N>+<A>" 192 150 1 5 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 248 150 1 6 
+"<E>/<t1>" 377 158 1 7 
+"<!DIC>" 409 132 1 8 
+"<E>/</t1>" 475 162 1 9 
+"\" \"+<MOT>" 500 129 1 10 
+"<être.V:P:J:G:F:T:I:K>" 574 128 1 11 
+"un+du" 746 128 1 12 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 805 125 1 13 
+"<E>/<t2>" 981 151 1 14 
+"<!DIC>" 1031 115 1 15 
+"<E>/</t2>" 1112 154 1 16 
+"<E>/</tout_X_est_un_Y>" 1176 154 1 1 

@@ -1,0 +1,514 @@
+0000000015
+-1 meronymie
+: 1 1 
+: -2 2 -3 2 -4 2 -5 2 -6 2 -7 2 -8 2 -9 2 -10 2 -11 2 -12 2 -13 2 -14 2 -15 2 
+: 2 3 
+t 
+f 
+-2 composition_parties_identiques
+: 22 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 12 6 11 6 10 6 9 6 8 6 7 6 
+: 6 7 5 7 
+: 16 8 15 8 14 8 13 8 
+: 17 10 6 9 5 9 
+: 19 11 17 11 
+: 18 9 
+: 20 12 
+: 3 13 
+: 21 14 
+: 24 15 
+t 
+f 
+-3 N_compo_non_org
+: 30 1 29 1 28 1 27 1 26 1 25 1 
+: 6 2 5 2 
+: 34 3 33 3 
+: 17 5 6 4 5 4 
+: 19 6 17 6 
+: 18 4 
+: 4 7 
+: 3 8 
+: 23 9 
+: 6 10 5 10 
+: 14 11 
+: 17 13 6 12 5 12 
+: 20 14 
+: 20 14 18 15 
+: 3 16 
+: 35 17 
+: 21 18 
+: 19 12 
+: 32 19 
+t 
+f 
+-4 npartie_de
+: 36 1 
+: 4 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 37 6 
+: 38 9 17 8 5 7 
+: 60 10 59 10 58 10 57 10 56 10 55 10 54 10 53 10 52 10 51 10 50 10 49 10 48 10 47 10 46 10 45 10 44 10 43 10 42 10 41 10 40 10 39 10 
+: 6 9 5 9 
+: 60 10 59 10 58 10 57 10 56 10 55 10 54 10 53 10 52 10 51 10 50 10 49 10 48 10 47 10 46 10 45 10 44 10 43 10 42 10 41 10 40 10 39 10 38 7 17 11 
+: 61 12 33 12 
+: 6 7 5 7 
+: 17 14 6 13 5 13 
+: 19 15 17 15 
+: 18 13 
+: 20 16 
+: 3 17 
+: 21 18 
+: 62 19 
+t 
+f 
+-5 X_compo_identique
+: 63 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 69 6 68 6 67 6 66 6 65 6 64 6 
+: 6 8 5 7 
+: 17 10 6 9 5 9 
+: 35 11 17 10 6 9 5 9 
+: 20 12 
+: 20 12 18 13 
+: 6 7 
+: 3 14 
+: 35 15 
+: 21 16 
+: 19 9 
+: 70 17 
+t 
+f 
+-6 X_etre_decompose_en_Y
+: 71 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 72 5 
+: 6 6 5 6 
+: 86 7 85 7 84 7 83 7 82 7 81 7 80 7 79 7 78 7 77 7 76 7 75 7 74 7 73 7 
+: 87 9 6 8 5 8 
+: 13 10 
+: 6 11 
+: 17 13 6 12 5 12 
+: 35 14 
+: 20 15 
+: 35 17 18 16 
+: 6 18 
+: 3 19 
+: 35 20 
+: 89 21 
+: 88 8 
+: 21 22 
+: 19 12 
+: 90 12 
+: 91 23 
+t 
+f 
+-7 X_etre_nom_groupe_de_Y
+: 92 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 37 6 
+: 38 8 5 7 
+: 100 9 17 9 
+: 100 9 35 10 17 9 
+: 98 11 97 11 96 11 95 11 94 11 93 11 
+: 38 7 
+: 6 13 5 12 
+: 34 14 33 14 
+: 35 15 34 14 33 14 
+: 17 17 6 16 5 16 
+: 6 12 
+: 20 18 
+: 20 18 18 19 
+: 3 20 
+: 35 21 
+: 21 22 
+: 19 16 
+: 99 23 
+t 
+f 
+-8 X_forme_de_Y
+: 103 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 102 6 101 6 
+: 6 8 5 7 
+: 34 9 33 9 
+: 35 10 34 9 33 9 
+: 17 12 6 11 5 11 
+: 6 7 
+: 20 13 
+: 20 13 18 14 
+: 3 15 
+: 35 16 
+: 21 17 
+: 19 11 
+: 104 18 
+t 
+f 
+-9 X_inclure_Y
+: 105 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 111 6 110 6 109 6 108 6 107 6 106 6 
+: 112 7 17 7 6 7 5 7 
+: 20 8 
+: 3 9 
+: 21 10 
+: 105 11 
+t 
+f 
+-10 X_renferme_Y
+: 113 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 134 6 133 6 132 6 131 6 130 6 129 6 128 6 127 6 126 6 125 6 124 6 123 6 122 6 121 6 120 6 119 6 118 6 117 6 116 6 115 6 114 6 
+: 17 8 6 7 5 7 
+: 20 9 
+: 20 9 18 10 
+: 3 11 
+: 35 12 
+: 21 13 
+: 19 7 
+: 135 14 
+t 
+f 
+-11 X_se_decomp_en_Y
+: 136 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 137 6 
+: 152 7 151 7 150 7 149 7 148 7 147 7 146 7 145 7 144 7 143 7 142 7 141 7 140 7 139 7 138 7 
+: 6 9 5 8 
+: 13 10 
+: 35 11 13 10 
+: 17 13 6 12 5 12 
+: 6 14 
+: 20 15 
+: 20 15 18 16 
+: 35 17 13 10 
+: 3 18 
+: 35 19 
+: 6 8 
+: 21 20 
+: 19 12 
+: 153 21 
+t 
+f 
+-12 Y_etre_classe_dans_X
+: 154 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 37 6 
+: 163 7 162 7 161 7 160 7 159 7 158 7 157 7 156 7 155 7 
+: 6 9 5 8 
+: 171 10 170 10 169 10 168 10 167 10 166 10 165 10 164 10 15 10 14 10 13 10 
+: 171 10 170 10 169 10 168 10 167 10 166 10 165 10 164 10 35 11 15 10 14 10 13 10 
+: 17 13 6 12 5 12 
+: 6 8 
+: 20 14 
+: 20 14 18 15 
+: 3 16 
+: 35 17 
+: 20 18 
+: 6 12 
+: 172 19 
+t 
+f 
+-13 Y_etre_interne_a_X
+: 173 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 37 6 
+: 100 8 38 9 17 8 5 7 
+: 174 10 164 10 
+: 6 9 5 9 
+: 174 10 164 10 100 11 38 12 17 11 
+: 175 13 
+: 6 12 5 12 
+: 174 10 164 10 100 14 38 7 17 14 
+: 17 16 6 15 5 15 
+: 6 7 5 7 
+: 20 17 
+: 20 17 18 18 
+: 3 19 
+: 35 20 
+: 21 21 
+: 19 15 
+: 176 22 
+t 
+f 
+-14 Y_rapprocher_dans_X
+: 177 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 179 6 178 6 
+: 6 8 5 7 
+: 180 9 15 9 14 9 13 9 
+: 180 9 35 10 15 9 14 9 13 9 
+: 17 12 6 11 5 11 
+: 6 7 
+: 20 13 
+: 20 13 18 14 
+: 3 15 
+: 35 16 
+: 21 17 
+: 19 11 
+: 181 18 
+t 
+f 
+-15 Y_verbe_constitution_classe_X
+: 182 1 
+: 4 2 
+: 3 3 
+: 23 4 
+: 6 5 5 5 
+: 186 6 185 6 184 6 183 6 
+: 187 8 6 7 5 7 
+: 206 9 205 9 204 9 203 9 202 9 201 9 200 9 199 9 198 9 197 9 196 9 195 9 194 9 193 9 192 9 191 9 190 9 189 9 188 9 
+: 35 10 
+: 17 12 6 11 5 11 
+: 6 7 
+: 20 13 
+: 20 13 18 14 
+: 3 15 
+: 35 16 
+: 21 17 
+: 19 11 
+: 182 18 
+t 
+f 
+%<E>
+%<E>/<meronymie>
+%<E>/</meronymie>
+%<!DIC>
+%<E>/<t1>
+@ 
+%<MOT>
+%<réunir.V:K>
+%<rassembler.V:K>
+%<unir.V:K>
+%<regrouper.V:K>
+%<grouper.V:K>
+%<collecter.V:K>
+%en
+%dans
+%sur
+%relatif
+%<DET>
+%*
+%<!MOT>
+%<E>/<t2>
+%<E>/</t2>
+%<E>/<composition_parties_identiques>
+%<E>/</t1>
+%<E>/</composition_parties_identiques>
+%tas
+%ams
+%rammasis
+%masse
+%accumulation
+%entassement
+%<E>/<N_compo_non_org>
+%<E>/</N_compo_non_org>
+%de
+%du
+%.
+%<E>/<npartie_de>
+%<être.V:P:J:G:F:T:I>
+%<ADV>
+%constituant
+%composant
+%composante
+%ingredient
+%membre
+%organe
+%élément
+%partie
+%bout
+%case
+%division
+%faction
+%fragment
+%morceau
+%parcelle
+%part
+%pièce
+%portion
+%étape
+%période
+%phase
+%stade
+%des
+%<E>/</npartie_de>
+%<E>/<X_compo_identique>
+%<réunir.V:P:J:G:F:I>
+%<unir.V:P:J:G:F:I>
+%<rassembler.V:P:J:G:F:I>
+%<grouper.V:P:J:G:F:I>
+%<reg+rouper.V:P:J:G:F:I>
+%<collecter.V:P:J:G:F:I>
+%<E>/</X_compo_identique>
+%<E>/<X_etre_decompose_en_Y>
+%<être:V:P:J:G:F:T:I>
+%<analyser.V:G>
+%<décomposer.V:G>
+%<démembrer.V:G>
+%<désassembler.V:G>
+%<disjoindre.V:G>
+%<dissocier.V:G>
+%<désagréger.V:G>
+%<séparer.V:G>
+%<découper.V:G>
+%<partager.V:G>
+%<trancher.V:G>
+%<diviser.V:G>
+%<fractionner.V:G>
+%<fragmenter.V:G>
+%(
+%)
+%T
+%2
+%<E>/</X_etre_decompose_en_Y>
+%<E>/<X_etre_nom_groupe_Y>
+%ensemble
+%groupe
+%classe
+%réunion
+%famille
+%collection
+%<E>/</X_etre_nom_groupe_Y>
+%<PREP>
+%<former.V:K>
+%<constituer.V:K>
+%<E>/<X_forme_de_Y>
+%<E>/</X_forme_de_Y>
+%<E>/<X_inclure_Y>
+%<abriter.V:P:J:G:F:T:I>
+%<comporter.V:P:J:G:F:T:I>
+%<comprendre.V:P:J:G:F:T:I>
+%<compter.V:P:+J:G:F:T:I>
+%<inclure.V:P:J:G:F:T:I>
+%<intérger.V:P:J:G:F:T:I>
+%<DET*.<!MOT>
+%<E>/<X_renferme_Y>
+%<renfermer.V:P:J:G:F:T:I>
+%<contenir.V:P:J:G:F:I>
+%<englober.V:P:J:G:F:I>
+%<arbiter.V:P:J:G:F:I+>
+%<emprisonner.V:P:J:G:F:I>
+%<loger.V:P:J:G:F:I>
+%<incorporer.V:P:J:G:F:I>
+%<renfermer.A>
+%<contenir.A>
+%<englober.A>
+%<arbiter.A>
+%<emprisonner.A>
+%<loger.A>
+%<incorporer.A>
+%<renfermer.N>
+%<contenir.N>
+%<englober.N>
+%<arbiter.N>
+%<emprisonner.N>
+%<loger.N>
+%<incorporer.N>
+%<E>/</X_renfereme_Y>
+%<E>/<X_se_decomp_en_Y>
+%se
+%<analyser.V:P:J:G:F:T:I>
+%<décomposer.V:P:J:G:F:T:I>
+%<démembrer.V:P:J:G:F:T:I>
+%<désassem+bler.V:P:J:G:F:T:I>
+%<disjoindre.V:P:J:G:F:T:I>
+%<dissocier.V:P:J:G:F:T:I>
+%<désagréger.V:P:J:G:F+:T:I>
+%<séparer.V:P:J:G:F:T:I>
+%<découper.V:P:J:G:F:T:I>
+%<partager.V:P:J:G:F:T:I>
+%<trancher.V:+P:J:G:F:T:I>
+%<diviser.V:P:J:G:F:T:I>
+%<fractionner.V:P:J:G:F:T:I>
+%<fragmenter.V:P:J:G:F:T:I>
+%<dissoudre.V:P:J:G:F:T:I>
+%<E>/</X_se_decomp_en_Y>
+%<E>/<Y_etre_classe_dans_X>
+%<classer.V:G>
+%<classifier.V:G>
+%<cataloguer.V:G>
+%<ranger.V:G>
+%<placer.V:G>
+%<inclure.V:G>
+%<étiqueter.V:G>
+%<catégoriser.V:G>
+%<grouper.V:G>
+%intérieur
+%parmi
+%coeur
+%centre
+%milieu
+%dedans
+%fond
+%sein
+%<E>/</Y_etre_classe_dans_X>
+%<E>/<Y_etre_interne_a_X>
+%interne
+%à
+%<E>/</Y_etre_interne_a_X>
+%<E>/<Y_rapprocher_dans_X>
+%<rapprocher.V:G>
+%<receuillir.V:G>
+%vers
+%<E>/</Y_rapprocher_dans_X>
+%<E>/<Y_verbe_constitution_classe_X>
+%<former.V:P:J:G:F:T:I>
+%<représenter.V:P:J:G:F:T:I>
+%<constituer.V:P:J:G:F:T:I>
+%<consister.V:P:+J:G:F:T:I>
+%<MIOT>
+%<classe.N>
+%<caste.N>
+%<catégorie.N>
+%<groupe.N>
+%<division.N>
+%<espèce.N>
+%<sorte.N>
+%<rac+e.N>
+%<ensemble.N>
+%<variété.N>
+%<type.N>
+%<medèle.N>
+%<pattern.N>
+%<famille.N>
+%<genre.N>
+%<collection.N>
+%<concept.N>
+%<partie.N>
+%<partition.N>
+f

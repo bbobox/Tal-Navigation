@@ -1,0 +1,51 @@
+#Unigraph
+SIZE 1770 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+31
+"<E>" 19 274 1 2 
+"" 1596 344 0 
+"<E>/<npartie_de>" 40 222 1 3 
+"<E>/<t1>" 74 200 1 4 
+"<!DIC>" 134 67 1 5 
+"<E>/<t1>" 200 77 1 6 
+"\" \"+<MOT>" 223 33 1 7 
+"<être.V:P:J:G:F:T:I>" 302 137 3 8 12 17 
+"\" \"" 724 14 1 23 
+"<DET>" 635 85 1 10 
+"\" \" +<MOT>" 709 82 1 13 
+"<ADV>" 652 142 1 13 
+"<E>" 576 144 2 11 9 
+"<E>" 802 132 1 23 
+"<DET>" 572 245 1 15 
+"\" \"+<MOT>" 657 215 1 18 
+"<ADV>" 591 314 1 18 
+"<E>" 497 274 2 16 14 
+"<E>" 744 285 2 21 19 
+"<DET>" 797 213 1 20 
+"\" \"+<MOT>" 864 211 1 22 
+"<ADV>" 840 309 1 22 
+"<E>" 961 241 1 23 
+"constituant+composant+composante+ingredient+membre+organe+élément+partie+bout+case+division+faction+fragment+morceau+parcelle+part+pièce+portion+étape+période+phase+stade" 1103 209 1 24 
+"de+des" 1212 177 1 25 
+"\" \"+<MOT>+<DET>*" 1263 178 1 26 
+"<!MOT>+<DET>" 1339 175 1 27 
+"<E>/<t2>" 1410 136 1 28 
+"<!DIC>" 1439 102 1 29 
+"<E>/</t2>" 1506 161 1 30 
+"<E>/</npartie_de>" 1550 235 1 1 

@@ -1,0 +1,146 @@
+0000000004
+-1 inter-hyerarchique
+: 1 1 
+: -2 2 -3 2 -4 2 
+: 2 3 
+t 
+f 
+-2 baser
+: 3 1 
+: 4 2 
+: 5 3 
+: 6 4 
+: 11 5 10 5 
+: 8 6 7 6 
+: 9 7 
+: 12 9 11 8 10 8 
+: 16 10 
+: 16 10 13 11 
+: 5 12 
+: 14 13 
+: 17 14 
+: 15 8 
+: 18 15 
+t 
+f 
+-3 Y_situe_dans_X_1
+: 19 1 
+: 4 2 
+: 5 3 
+: 6 4 
+: 11 5 10 5 
+: 40 6 39 6 38 6 37 6 36 6 35 6 34 6 33 6 32 6 31 6 30 6 29 6 28 6 27 6 26 6 25 6 24 6 23 6 22 6 21 6 20 6 
+: 11 8 10 7 
+: 43 9 
+: 43 9 14 10 
+: 12 12 11 11 10 11 
+: 41 13 11 7 
+: 16 14 
+: 16 14 13 15 
+: 42 16 
+: 5 17 
+: 14 18 
+: 14 19 
+: 17 20 
+: 15 11 
+: 11 7 
+: 44 21 
+t 
+f 
+-4 Y_situe_dans_X_2
+: 45 1 
+: 4 2 
+: 5 3 
+: 6 4 
+: 11 5 10 5 
+: 72 6 71 6 70 6 69 6 68 6 67 6 66 6 65 6 64 6 63 6 62 6 61 6 60 6 59 6 58 6 57 6 56 6 55 6 54 6 53 6 52 6 51 6 50 6 49 6 48 6 47 6 46 6 
+: 11 8 10 7 
+: 43 9 
+: 43 9 14 10 
+: 12 12 11 11 10 11 
+: 11 13 
+: 16 14 
+: 16 14 13 15 
+: 43 9 14 16 
+: 5 17 
+: 14 18 
+: 11 7 
+: 17 19 
+: 15 11 
+: 45 20 
+t 
+f 
+%<E>
+%<E>/<inter-hyerarchique>
+%<E>/</inter-hyerarchique>
+%<E>/<baser>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+%<baser.V:K>
+%<fonder.V:K>
+%sur
+@ 
+%<MOT>
+%<DET>
+%*
+%.
+%<!MOT>
+%<E>/<t2>
+%<E>/</t2>
+%<E>/</baser>
+%<E>/<Y_situe_dans_X_1>
+%<situer.V:K>
+%<localiser.V:K>
+%<placer.V:K>
+%<positionner.V:K>
+%<disposer.V:K>
+%<insérer.V:K>
+%<installer.V:K>
+%<poser.V:K>
+%<accrocher.V:K>
+%<fixer.V:K>
+%<sceller.V:K>
+%<attacher.V:K>
+%<mettre.V:K>
+%<caser.V:K>
+%<nicher.V:K>
+%<déposer.V:K>
+%<ficher.V:K>
+%<loger.V:K>
+%<adosser.V:K>
+%<appliquer.V:K>
+%<camper.V:K>
+%MOT
+%>
+%dans
+%<E>/</Y_situe_dans_X_1>
+%<E>/<Y_situe_dans_X_2>
+%<jucher.V:K>
+%<flanquer.V:K>
+%<arrimer.V:K>
+%<amarrer.V:K>
+%<boulonner.V:K>
+%<clouer.V:K>
+%<coincer.V:K>
+%<enchâsser.V:K>
+%<épingler.V:K>
+%<river.V:K>
+%<riveter.V:K>
+%<visser.V:K>
+%<implanter.V:K>
+%<ranger.V:K>
+%<garer.V:K>
+%<immobiliser.V:K>
+%<introduire.V:K>
+%<enfoncer.V:K>
+%<plonger.V:K>
+%<enfouir.V:K>
+%<ensevelir.V:K>
+%<contenir.V:K>
+%<emprisonner.V:K>
+%<abriter.V:K>
+%<dresser.V:K>
+%<étendre.V:K>
+%<trouver.V:K>
+f

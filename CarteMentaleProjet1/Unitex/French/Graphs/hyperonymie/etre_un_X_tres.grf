@@ -1,0 +1,37 @@
+#Unigraph
+SIZE 1770 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+17
+"<E>" 70 200 1 2 
+"" 1268 164 0 
+"<E>/<etre_un_X_tres>" 95 200 1 3 
+"<E>/<t1>" 131 93 1 4 
+"<!DIC>" 175 91 1 5 
+"<E>/</t1>" 251 93 1 13 
+"<être.V:P:J:G:F:T:I>" 361 204 1 7 
+"\" \"+<MOT>" 506 201 1 8 
+"<DET>" 581 200 1 9 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 653 199 1 10 
+"<E>/<t2>" 787 200 1 11 
+"<!DIC>" 809 127 1 12 
+"<E>/</t2>" 880 199 1 14 
+"\" \"+<MOT>" 283 203 1 6 
+"\" \"+<MOT>" 921 171 1 15 
+"très+absolument" 1010 167 1 16 
+"<E>/</etre_un_X_tres>" 1147 163 1 1 

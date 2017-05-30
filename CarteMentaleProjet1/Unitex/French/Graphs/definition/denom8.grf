@@ -1,0 +1,37 @@
+#Unigraph
+SIZE 1887 867
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+17
+"<E>" 52 197 1 2 
+"" 1374 389 0 
+"T1" 75 124 1 3 
+"\" \"+<MOT>" 121 375 1 4 
+"nom+terme+mot+expression+appellation+désignation+dénomination+concept+notion+idée" 180 113 1 5 
+"référer+revoyer+réference+allusion" 305 58 1 6 
+"\" \"+<ADV>" 394 54 1 7 
+"à" 467 55 1 9 
+"\" \"+<MOT>+<DET>*" 580 54 1 10 
+"<!MOT>+<DET>" 499 245 1 8 
+"T2dire=T1" 658 263 1 11 
+"\" \"+<MOT>" 754 43 1 12 
+"<dit.A>" 823 173 1 13 
+"<dire.V:P:F:T:G:J>" 895 17 1 14 
+"\" \"+<MOT> +<DET>*" 1068 50 1 15 
+"<!MOT>+<DET>" 1172 54 1 16 
+"T2" 1193 290 1 1 

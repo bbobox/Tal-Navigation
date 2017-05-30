@@ -1,0 +1,36 @@
+#Unigraph
+SIZE 1496 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+16
+"<E>" 70 200 1 2 
+"" 1286 163 0 
+"<E>/<Y_etre_classe_dans_X>" 112 197 1 3 
+"<E>/<t1>" 134 89 1 4 
+"<!DIC>" 158 90 1 5 
+"<E>/</t1>" 232 89 1 6 
+"\" \" +<MOT>" 268 90 1 7 
+"<être.V:P:J:G:F:T:I>" 339 189 1 8 
+"<classer.V:G>+<classifier.V:G>+<cataloguer.V:G>+<ranger.V:G>+<placer.V:G>+<placer.V:G>+<inclure.V:G>+<étiqueter.V:G>+<catégoriser.V:G>+<grouper.V:G>" 479 166 1 9 
+"\" \"+<MOT>+<MOT>.<MOT>" 621 118 1 10 
+"en+dans+intérieur+parmi+coeur+centre+milieu+dedans+fond+sein+sur" 754 156 1 11 
+"\" \"+<MOT>+<DET>*.<MOT>+<DET>" 843 157 1 12 
+"<E>/<t2>" 972 155 1 13 
+"<!DIC>" 1000 95 1 14 
+"<E>/<t2>" 1075 152 1 15 
+"<E>/</Y_etre_classe_dans_X>" 1147 160 1 1 

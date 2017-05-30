@@ -1,0 +1,54 @@
+0000000001
+-1 X_renferme_Y
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 27 6 26 6 25 6 24 6 23 6 22 6 21 6 20 6 19 6 18 6 17 6 16 6 15 6 14 6 13 6 12 6 11 6 10 6 9 6 8 6 7 6 
+: 28 8 6 7 5 7 
+: 32 9 
+: 32 9 29 10 
+: 3 11 
+: 30 12 
+: 33 13 
+: 31 7 
+: 34 14 
+t 
+f 
+%<E>
+%<E>/<X_renferme_Y>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%<renfermer.V:P:J:G:F:T:I>
+%<contenir.V:P:J:G:F:I>
+%<englober.V:P:J:G:F:I>
+%<arbiter.V:P:J:G:F:I+>
+%<emprisonner.V:P:J:G:F:I>
+%<loger.V:P:J:G:F:I>
+%<incorporer.V:P:J:G:F:I>
+%<renfermer.A>
+%<contenir.A>
+%<englober.A>
+%<arbiter.A>
+%<emprisonner.A>
+%<loger.A>
+%<incorporer.A>
+%<renfermer.N>
+%<contenir.N>
+%<englober.N>
+%<arbiter.N>
+%<emprisonner.N>
+%<loger.N>
+%<incorporer.N>
+%<DET>
+%*
+%.
+%<!MOT>
+%<E>/<t2>
+%<E>/</t2>
+%<E>/</X_renfereme_Y>
+f

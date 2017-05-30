@@ -1,0 +1,57 @@
+0000000001
+-1 Y_etre_classe_dans_X
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 7 6 
+: 16 7 15 7 14 7 13 7 12 7 11 7 10 7 9 7 8 7 
+: 6 9 5 8 
+: 28 10 27 10 26 10 25 10 24 10 23 10 22 10 21 10 20 10 19 10 18 10 
+: 28 10 27 10 26 10 25 10 24 10 23 10 22 10 21 10 20 10 19 10 18 10 17 11 
+: 29 13 6 12 5 12 
+: 6 8 
+: 31 14 
+: 31 14 30 15 
+: 3 16 
+: 17 17 
+: 31 18 
+: 6 12 
+: 32 19 
+t 
+f 
+%<E>
+%<E>/<Y_etre_classe_dans_X>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%<être.V:P:J:G:F:T:I>
+%<classer.V:G>
+%<classifier.V:G>
+%<cataloguer.V:G>
+%<ranger.V:G>
+%<placer.V:G>
+%<inclure.V:G>
+%<étiqueter.V:G>
+%<catégoriser.V:G>
+%<grouper.V:G>
+%.
+%en
+%dans
+%intérieur
+%parmi
+%coeur
+%centre
+%milieu
+%dedans
+%fond
+%sein
+%sur
+%<DET>
+%*
+%<E>/<t2>
+%<E>/</Y_etre_classe_dans_X>
+f

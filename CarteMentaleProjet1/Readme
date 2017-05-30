@@ -1,0 +1,17 @@
+
+	
+1) Executer le fichier "Installations/install.sh" pour installer (Unitex, Yatea, TagEN) au cas ou ils ne serait pas deja installés sur votre machine et 
+  -installer YATEA en suivant les instructions données dans le fichier "Installations/installation_Yatea.odt/pdf"
+
+2) Ouvrir le Projet dans une IDE (ex :Eclipse ) et Compliler manuellement la classe principale "ConstuctionXMlDoc"
+
+
+3)Lancement de l'executable du projet (.jar) : java -verbose:jni -Djava.library.path=src -jar Projet.jar
+	En option proposée, 
+	-Saisir 1 pour lancer à partir d'un texte brut/non structuré (nomFichier.txt)
+	-saisir 1 un pour lancer à partir d'un corpus Xml (nomFichier.xml)
+
+NB: Retrouvez dans le fichier "Presentaion.odt/pdf" qui contient plus d'informations sur les les classes et methodes appellées pour la contruction du fichier Xml resultat 
+
+>> Le XMl resulat se trouve dans nomFichier_xml/nomFichier.xml  (avec : nomFichier etant le nom du fichier à representer) 
+

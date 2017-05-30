@@ -1,0 +1,37 @@
+#Unigraph
+SIZE 1771 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+17
+"<E>" 12 249 1 15 
+"" 1005 175 0 
+"définir+définir" 63 170 1 3 
+"\" \"+<MOT>+<DET>*" 127 93 1 4 
+"<!MOT>+<DET>" 199 169 1 11 
+"<!DIC>" 314 53 1 12 
+"\" \"+<MOT>+<DET>*" 569 90 1 7 
+"<!MOT>+<DET>" 651 151 1 13 
+"<!DIC>" 772 27 1 14 
+"\" \"+<MOT>" 425 174 1 10 
+"comme" 498 135 1 6 
+"<E>/<t1>" 282 49 1 5 
+"<E>/</t1>" 383 96 1 9 
+"<E>/<t2>" 741 65 1 8 
+"<E>/</t2>" 838 55 1 16 
+"<E>/<definir>" 34 186 1 2 
+"<E>/</definir>" 916 175 1 1 

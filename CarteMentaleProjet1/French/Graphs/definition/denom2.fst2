@@ -1,0 +1,49 @@
+0000000001
+-1 denom2
+: 1 1 
+: 2 2 
+: 4 3 3 3 
+: 14 4 13 4 12 4 11 4 10 4 9 4 8 4 7 4 6 4 5 4 
+: 4 6 3 5 
+: 16 7 15 7 
+: 16 7 15 7 4 8 
+: 23 9 22 9 21 9 20 9 19 9 18 9 17 9 
+: 16 7 15 7 4 10 
+: 24 12 23 9 22 9 21 9 20 9 19 9 18 9 17 9 4 11 3 11 
+: 16 7 15 7 4 13 
+: 26 14 24 14 
+: 25 11 
+: 16 7 15 7 4 5 
+: 1 15 
+: 27 16 
+t 
+f 
+%<E>
+%T
+%1
+@ 
+%<MOT>
+%porter
+%appliquer
+%employer
+%réserver
+%recevoir
+%prendre
+%utiliser
+%donner
+%proposer
+%mériter
+%ce
+%le
+%nom
+%terme
+%mot
+%expression
+%appellation
+%désignation
+%dénomination
+%<DET>
+%*
+%<!MOT>
+%2
+f

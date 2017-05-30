@@ -1,0 +1,57 @@
+0000000001
+-1 X_se_decomp_en_Y
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 7 6 
+: 22 7 21 7 20 7 19 7 18 7 17 7 16 7 15 7 14 7 13 7 12 7 11 7 10 7 9 7 8 7 
+: 6 9 5 8 
+: 27 10 
+: 27 10 23 11 
+: 28 13 6 12 5 12 
+: 6 14 
+: 24 15 
+: 29 16 24 15 
+: 27 10 23 17 
+: 3 18 
+: 23 19 
+: 6 8 
+: 25 20 
+: 30 12 
+: 26 21 
+t 
+f 
+%<E>
+%<E>/<X_se_decomp_en_Y>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%se
+%<analyser.V:P:J:G:F:T:I>
+%<décomposer.V:P:J:G:F:T:I>
+%<démembrer.V:P:J:G:F:T:I>
+%<désassem+bler.V:P:J:G:F:T:I>
+%<disjoindre.V:P:J:G:F:T:I>
+%<dissocier.V:P:J:G:F:T:I>
+%<désagréger.V:P:J:G:F+:T:I>
+%<séparer.V:P:J:G:F:T:I>
+%<découper.V:P:J:G:F:T:I>
+%<partager.V:P:J:G:F:T:I>
+%<trancher.V:+P:J:G:F:T:I>
+%<diviser.V:P:J:G:F:T:I>
+%<fractionner.V:P:J:G:F:T:I>
+%<fragmenter.V:P:J:G:F:T:I>
+%<dissoudre.V:P:J:G:F:T:I>
+%.
+%<E>/<t2>
+%<E>/</t2>
+%<E>/</X_se_decomp_en_Y>
+%en
+%<DET>
+%*
+%<!MOT>
+f

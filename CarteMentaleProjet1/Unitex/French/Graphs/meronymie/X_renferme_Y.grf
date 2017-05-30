@@ -1,0 +1,33 @@
+#Unigraph
+SIZE 1571 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+13
+"<E>" 43 355 1 2 
+"" 1042 236 0 
+"<E>/<X_renferme_Y>" 73 354 1 3 
+"<E>/<t1>" 96 268 1 4 
+"<!DIC>" 132 268 1 5 
+"<E>/</t1>" 206 269 1 6 
+"\" \"+<MOT>" 234 212 1 7 
+"<renfermer.V:P:J:G:F:T:I>+<contenir.V:P:J:G:F:I>+<englober.V:P:J:G:F:I>+<arbiter.V:P:J:G:F:I+>+<emprisonner.V:P:J:G:F:I>+<loger.V:P:J:G:F:I>+<incorporer.V:P:J:G:F:I>+<renfermer.A>+<contenir.A>+<englober.A>+<arbiter.A>+<emprisonner.A>+<loger.A>+<incorporer.A>+<renfermer.N>+<contenir.N>+<englober.N>+<arbiter.N>+<emprisonner.N>+<loger.N>+<incorporer.N>" 318 223 1 8 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 523 166 1 9 
+"<E>/<t2>" 653 37 1 10 
+"<!DIC>" 719 33 1 11 
+"<E>/</t2>" 791 35 1 12 
+"<E>/</X_renfereme_Y>" 839 140 1 1 

@@ -1,0 +1,63 @@
+Ceci est un texte de Test qui consistance à utiliser les quatres logiciels que sont Unitex, TagEN, 
+TreeTagger et YaTea pour l'extration des mots et termes du Corpus. Nous utilisations plusieurs phrases pour
+verifier que le Sequencage des phrasesse fait correctement. 
+Une relation de definition est la suivante:  définir To comme la Ti  To ,notamment la T2  (relation de meronymie) .  T1 le appeler  le T2.
+Dans cette phrase La voiture coute 5 euros, nous voulons extraitre 5 euros qui est une entité: monnaie.
+Les etapesn suivantes concernnent l'etiquetage morpho Syntaxique tu texte.
+
+Le maire de la ville a organisé une grande cérémonie le mardi 11 novembre 2014 pour modifier le nom de la rue 
+de Paris en rue du 11 novembre 1918.
+Ce mardi 11 novembre prouve que nous n'avons pas oublié les anciens combattants de notre ville.
+D'ailleurs  il  n'est  pas  impossible  qu'une  Maison  communale  du  11  novembre  voit  le  jour  pour  célébrer  le  11 
+novembre 2018..
+
+
+capituler devant la concurrence venue de la Maison-Blanche depuis quatre mois. Ils se sont éclipsés au moment précis où le cirque Trump partait vers l’Orient compliqué sans beaucoup d’idées. On croit comprendre qu’il s’agissait de découvrir les grandes religions, ce qu’il est possible de découvrir dans quelques ouvrages fondateurs.
+
+L’intéressé étant rétif à la lecture, le contribuable américain a donc financé une découverte de terrain, qui a surtout été l’occasion pour les critiques de mode de commenter les tenues de l’épouse et de la fille du Président. Les sycophantes de Fox News ont pu saluer la prestation diplomatique du Président, avec de bons arguments : il n’a pas mis sa kippa à Riyad et n’a pas demandé au pape des nouvelles de son épouse.
+
+La barre va maintenant monter, avec en particulier le G7 de Taormina qui clôture la séquence. Le G7 est une institution critiquée, dont beaucoup pensent qu’elle fait double emploi avec le G20, plus représentatif de l’économie mondiale. C’était néanmoins un forum utile, réunissant des acteurs économiques majeurs qui partagent une vision de l’ordre économique international, et des valeurs communes. Ou plutôt partageaient. Comment ne pas plaindre les six autres participants, et reprendre le refrain de Molière dans les Fourberies de Scapin, pièce inspirée de la comédie italienne : "Mais que diable allaient-ils faire en cette galère ?". Et ce n’est pas un procès d’intention, mais une constatation que les États-Unis prennent le contre-pied systématique des engagements pris il y a un an. Je citerai trois exemples.
+
+
+"Notre action collective et individuelle de lutte contre la corruption est essentielle pour la croissance économique, le développement durable et le maintien de la paix et de la sécurité. Nous nous engageons à prendre des mesures permettant d’améliorer la transparence en matière de passation des marchés publics... Nous appuierons également les efforts mondiaux de lutte contre la corruption. Nous nous engageons à montrer l’exemple en faisant avancer le programme mondial de lutte contre la corruption".
+
+La réalité : le 14 février dernier, le Président Trump signait un texte de loi rejetant les dispositions introduites au titre de la loi Dodd-Frank qui obligeaient les compagnies pétrolières et minières à publier les paiements des pots-de-vin à des gouvernements étrangers. Ce texte avait été vertement critiqué par l’actuel Secrétaire d’État, alors président d’Exxon-Mobil. L’argument du Président : "C’est un gros truc. Les boulots dans l’énergie reviennent." Au Nigéria peut-être, où Exxon-Mobil est poursuivi pour corruption, à moins que ce ne soient les emplois dans les banques suisses.
+
+2 - Commerce
+
+"Nous réaffirmons notre volonté de préserver l’ouverture de nos marchés et de lutter contre toutes les formes de protectionnisme. Pour renforcer encore le libre-échange, nous nous engageons à consolider le système commercial multilatéral fondé sur des règles et à promouvoir les négociations de l’Organisation mondiale du commerce (OMC)".
+
+La réalité : dans toutes les réunions préparatoires au sommet, les délégués et ministres américains ont refusé la mention de lutte contre le protectionnisme, tout en jurant qu’ils n’étaient pas protectionnistes, mais simplement contre le commerce déloyal. Comprenne qui pourra : si on est contre le protectionnisme, pourquoi ne pas l’écrire ? Sauf que dans le même temps, le Secrétaire au Trésor explique que la réduction de moitié du déficit américain va faire passer la croissance à 3%, et que le Secrétaire au Commerce commande des études visant à démontrer que l’OMC, "ancêtre de tous les accords commerciaux", je cite, est directement responsable du déficit commercial américain.
+
+
+Partager ce contenu
+
+Cette semaine, le cirque Barnum a fermé ses tentes après 156 ans d’existence. Ce n’est pas une coïncidence : les propriétaires ont dû capituler devant la concurrence venue de la Maison-Blanche depuis quatre mois. Ils se sont éclipsés au moment précis où le cirque Trump partait vers l’Orient compliqué sans beaucoup d’idées. On croit comprendre qu’il s’agissait de découvrir les grandes religions, ce qu’il est possible de découvrir dans quelques ouvrages fondateurs.
+
+L’intéressé étant rétif à la lecture, le contribuable américain a donc financé une découverte de terrain, qui a surtout été l’occasion pour les critiques de mode de commenter les tenues de l’épouse et de la fille du Président. Les sycophantes de Fox News ont pu saluer la prestation diplomatique du Président, avec de bons arguments : il n’a pas mis sa kippa à Riyad et n’a pas demandé au pape des nouvelles de son épouse.
+
+La barre va maintenant monter, avec en particulier le G7 de Taormina qui clôture la séquence. Le G7 est une institution critiquée, dont beaucoup pensent qu’elle fait double emploi avec le G20, plus représentatif de l’économie mondiale. C’était néanmoins un forum utile, réunissant des acteurs économiques majeurs qui partagent une vision de l’ordre économique international, et des valeurs communes. Ou plutôt partageaient. Comment ne pas plaindre les six autres participants, et reprendre le refrain de Molière dans les Fourberies de Scapin, pièce inspirée de la comédie italienne : "Mais que diable allaient-ils faire en cette galère ?". Et ce n’est pas un procès d’intention, mais une constatation que les États-Unis prennent le contre-pied systématique des engagements pris il y a un an. Je citerai trois exemples.
+
+Macron, Trump, Gentiloni : bal des débutants au G7 de Taormina
+Vous aimez cet article ?Inscrivez-vous à la Newsletter de l'Obs
+1 - Corruption
+
+To rassemble dans le T1   (erlation de meronymie)
+
+"Notre action collective et individuelle de lutte contre la corruption est essentielle pour la croissance économique, le développement durable et le maintien de la paix et de la sécurité. Nous nous engageons à prendre des mesures permettant d’améliorer la transparence en matière de passation des marchés publics... Nous appuierons également les efforts mondiaux de lutte contre la corruption. Nous nous engageons à montrer l’exemple en faisant avancer le programme mondial de lutte contre la corruption".
+
+La réalité : le 14 février dernier, le Président Trump signait un texte de loi rejetant les dispositions introduites au titre de la loi Dodd-Frank qui obligeaient les compagnies pétrolières et minières à publier les paiements des pots-de-vin à des gouvernements étrangers. Ce texte avait été vertement critiqué par l’actuel Secrétaire d’État, alors président d’Exxon-Mobil. L’argument du Président : "C’est un gros truc. Les boulots dans l’énergie reviennent." Au Nigéria peut-être, où Exxon-Mobil est poursuivi pour corruption, à moins que ce ne soient les emplois dans les banques suisses.
+2 - Commerce
+
+"Nous réaffirmons notre volonté de préserver l’ouverture de nos marchés et de lutter contre toutes les formes de protectionnisme. Pour renforcer encore le libre-échange, nous nous engageons à consolider le système commercial multilatéral fondé sur des règles et à promouvoir les négociations de l’Organisation mondiale du commerce (OMC)".
+
+La réalité : dans toutes les réunions préparatoires au sommet, les délégués et ministres américains ont refusé la mention de lutte contre le protectionnisme, tout en jurant qu’ils n’étaient pas protectionnistes, mais simplement contre le commerce déloyal. Comprenne qui pourra : si on est contre le protectionnisme, pourquoi ne pas l’écrire ? Sauf que dans le même temps, le Secrétaire au Trésor explique que la réduction de moitié du déficit américain va faire passer la croissance à 3%, et que le Secrétaire au Commerce commande des études visant à démontrer que l’OMC, "ancêtre de tous les accords commerciaux", je cite, est directement responsable du déficit commercial américain.
+3 - Climat
+
+"Nous nous engageons à prendre l’initiative avec la mise en œuvre rapide, transparente et vigoureuse de nos contributions nationales et à favoriser un niveau accru d’ambitions au fil du temps. Nous nous engageons également à participer activement à l’examen régulier des progrès accomplis dans le cadre du bilan mondial tous les cinq ans. Nous nous engageons à formuler et à communiquer des stratégies ambitieuses de développement à faibles émissions de gaz à effet de serre à long terme, à l’horizon du milieu du siècle, bien avant la date limite de 2020".
+
+La réalité : après avoir clamé pendant la campagne que le changement climatique était "un complot chinois contre l’économie américaine", le Président Trump a nommé à tous les postes de son gouvernement en charge, de près ou de loin, de l’environnement, des ayatollahs du "dénialisme", un culte très répandu chez les Républicains qui nie la réalité du changement climatique, ou, chez les espèces les plus évoluées, la responsabilité de l’homme dans l’affaire. Ce culte est pauvre en références scientifiques, mais riche en subsides versés généreusement par les pétroliers ou l’industrie du charbon.
+
+Dans une démarche analogue à celle de Staline contre les généticiens, ou digne des chasses aux sorcières de l’époque McCarthy, les nouvelles équipes ont cherché à constituer des listes des scientifiques du Département de l’Energie qui avaient participé à des réunions internationales sur le changement climatique. Et des experts estiment que la mise en œuvre des mesures déjà annoncées, qui n’est pas certaine, car le processus de réécriture des textes est complexe et peut être contesté devant la justice, amènerait à une réduction des GES de 9 ou 10% en 2025 par rapport à 2005, contre les 26-28% auxquels les équipes Obama s’étaient engagées. Qu’importe que les États-Unis restent partie prenante de l’accord de Paris. Ils seront hors-la-loi de l’accord.
+
+Au regard des engagements pris il y un an, il est difficile de ne pas conclure que les Etats-Unis du président Trump ne sont pas un état "voyou", un "rogue state". Resterait le lien des valeurs communes, à moins que… Qui, de son propre chef, appelle M. Duterte pour le féliciter sur le "boulot incroyable" du président philippin en matière de lutte contre la drogue était en famille à Riyad, bien plus qu’à Taormina. "Mais qu’allaient-ils faire en cette galère ?".

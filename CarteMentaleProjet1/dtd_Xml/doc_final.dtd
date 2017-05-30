@@ -1,0 +1,38 @@
+<!ELEMENT Doc (Phrases,EntiteN,Termes,Relations)>
+
+<!ELEMENT Phrases (Phrase*)>
+<!ATTLIST Phrase id CDATA #REQUIRED>
+<!ATTLIST Phrase type CDATA >
+<!ATTLIST Phrase paragraphe CDATA >
+<!ATTLIST Phrase segment CDATA >
+<!ATTLIST Phrase section CDATA >
+<!ATTLIST Phrase sous-section CDATA >
+
+
+<!ELEMENT Termes (Terme*)>
+<!ELEMENT Terme (nomTerme, phrases) >
+<!ELEMENT nomTerme (#PCDATA) >
+<!ELEMENT phrases (phrase)* >
+<!ATTLIST Terme id CDATA #REQUIRED>
+<!ATTLIST phrase idPhrase CDATA #REQUIRED>
+<!ATTLIST phrase nbOcc CDATA #REQUIRED>
+
+<!ELEMENT EntitesN (EntiteN*)>
+<!ELEMENT EntiteN (nomEntiteN, phrases) >
+<!ELEMENT nomEntite (#PCDATA) >
+<!ATTLIST EntiteN id CDATA #REQUIRED>
+<!ATTLIST EntiteN termCorrespondant CDATA #REQUIRED>
+<!ELEMENT phrases (phrase) >
+<!ATTLIST phrase idPhrase CDATA #REQUIRED>
+<!ATTLIST phrase nbOcc CDATA #REQUIRED>
+
+<!ELEMENT Relations (Relations)*>
+<!ELEMENT Relation (texteRelation,Phraseq*)>
+<!ELEMENT texteRelation (#PCDATA)>
+<!ATTLIST Relation id CDATA #REQUIRED>
+<!ATTLIST Relation type CDATA #REQUIRED>
+<!ATTLIST Relation idT1 CDATA #sEQUIRED>
+<!ATTLIST Relation idT2 CDATA #REQUIRED>
+<!ELEMENT phrases (phrase)* >
+<!ATTLIST phrase idPhrase CDATA #REQUIRED>
+<!ATTLIST phrase nbOcc CDATA #REQUIRED>

@@ -1,0 +1,25 @@
+#Unigraph
+SIZE 1188 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+5
+"<E>" 70 200 1 2 
+"" 671 199 0 
+"<E>/<meronymie>" 99 200 1 3 
+":composition_parties_identiques+:N_compo_non_org+:npartie_de+:X_compo_identique+:X_etre_decompose_en_Y+:X_etre_nom_groupe_de_Y+:X_forme_de_Y+:X_inclure_Y+:X_renferme_Y+:X_se_decomp_en_Y+:Y_etre_classe_dans_X+:Y_etre_interne_a_X+:Y_rapprocher_dans_X+:Y_verbe_constitution_classe_X" 270 199 1 4 
+"<E>/</meronymie>" 530 195 1 1 

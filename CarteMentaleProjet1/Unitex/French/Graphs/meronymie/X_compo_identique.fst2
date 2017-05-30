@@ -1,0 +1,42 @@
+0000000001
+-1 X_compo_identique
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 12 6 11 6 10 6 9 6 8 6 7 6 
+: 6 8 5 7 
+: 14 10 6 9 5 9 
+: 14 10 13 11 6 9 5 9 
+: 17 12 
+: 17 12 15 13 
+: 6 7 
+: 3 14 
+: 13 15 
+: 18 16 
+: 16 9 
+: 19 17 
+t 
+f 
+%<E>
+%<E>/<X_compo_identique>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%<réunir.V:P:J:G:F:I>
+%<unir.V:P:J:G:F:I>
+%<rassembler.V:P:J:G:F:I>
+%<grouper.V:P:J:G:F:I>
+%<reg+rouper.V:P:J:G:F:I>
+%<collecter.V:P:J:G:F:I>
+%.
+%<DET>
+%*
+%<!MOT>
+%<E>/<t2>
+%<E>/</t2>
+%<E>/</X_compo_identique>
+f

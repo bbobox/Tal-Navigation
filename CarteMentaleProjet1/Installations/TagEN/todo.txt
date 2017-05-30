@@ -1,0 +1,6 @@
+1 - Mise à jour du fichier d'aide pour l'option -t
+2 - Inclusion du scorer (tagen -score file ref)
+	tagen -score file.tag reference
+	Il faut être capable de distinguer, pour chaque paramètre, s'il s'agit d'un fichier de tag ou non.
+3 - Mise à jour du fichier d'aide pour le scorer
+

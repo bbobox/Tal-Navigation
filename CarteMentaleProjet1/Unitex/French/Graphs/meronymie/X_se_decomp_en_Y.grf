@@ -1,0 +1,36 @@
+#Unigraph
+SIZE 1378 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+16
+"<E>" 70 200 1 2 
+"" 1175 158 0 
+"<E>/<X_se_decomp_en_Y>" 112 197 1 3 
+"<E>/<t1>" 147 166 1 4 
+"<!DIC>" 170 32 1 5 
+"<E>/</t1>" 244 171 1 6 
+"\" \"+<MOT>" 273 171 1 7 
+"se" 351 172 1 8 
+"<analyser.V:P:J:G:F:T:I>+<décomposer.V:P:J:G:F:T:I>+<démembrer.V:P:J:G:F:T:I>+<désassem+bler.V:P:J:G:F:T:I>+<disjoindre.V:P:J:G:F:T:I>+<dissocier.V:P:J:G:F:T:I>+<désagréger.V:P:J:G:F+:T:I>+<séparer.V:P:J:G:F:T:I>+<découper.V:P:J:G:F:T:I>+<partager.V:P:J:G:F:T:I>+<trancher.V:+P:J:G:F:T:I>+<diviser.V:P:J:G:F:T:I>+<fractionner.V:P:J:G:F:T:I>+<fragmenter.V:P:J:G:F:T:I>+<dissoudre.V:P:J:G:F:T:I>" 395 148 1 9 
+"\" \"+<MOT>+<MOT>.<MOT>+<MOT>.<MOT>.<MOT>" 618 147 1 14 
+"<E>/<t2>" 975 28 1 11 
+"<!DIC>" 998 30 1 12 
+"<E>/</t2>" 1068 30 1 13 
+"<E>/</X_se_decomp_en_Y>" 1117 158 1 1 
+"en" 795 152 1 15 
+"\" \"+<MOT>+<DET>*.<!MOT>+<DET>" 828 159 1 10 

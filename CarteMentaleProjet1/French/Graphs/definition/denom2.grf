@@ -1,0 +1,35 @@
+#Unigraph
+SIZE 1887 867
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+15
+"<E>" 70 200 1 2 
+"" 1201 147 0 
+"T1" 120 161 1 3 
+"\" \"+<MOT>" 162 111 1 4 
+"porter+appliquer+employer+réserver+recevoir+prendre+utiliser+donner+proposer+mériter" 279 104 2 5 8 
+"\" \"" 403 40 1 9 
+"<E>" 1135 172 0 
+"<E>" 1135 172 0 
+"<MOT>/$[1,5]$" 404 145 1 9 
+"ce+le" 510 86 1 10 
+"nom+terme+mot+expression+appellation+désignation+dénomination" 659 89 2 11 10 
+"\" \"+<MOT>+<DET>*" 843 88 1 12 
+"<!MOT>+<DET>" 950 31 1 14 
+"<E>" 1135 172 0 
+"T2" 1037 149 1 1 

@@ -1,0 +1,54 @@
+0000000001
+-1 Y_verbe_constitution_classe_X
+: 1 1 
+: 2 2 
+: 3 3 
+: 4 4 
+: 6 5 5 5 
+: 10 6 9 6 8 6 7 6 
+: 11 8 6 7 5 7 
+: 31 9 30 9 29 9 28 9 27 9 26 9 25 9 24 9 23 9 22 9 21 9 20 9 19 9 18 9 17 9 16 9 15 9 14 9 13 9 
+: 12 10 
+: 32 12 6 11 5 11 
+: 6 7 
+t 
+t 33 13 
+: 12 14 
+: 34 11 
+f 
+%<E>
+%<E>/<Y_verbe_constitution_classe_X>
+%<E>/<t1>
+%<!DIC>
+%<E>/</t1>
+@ 
+%<MOT>
+%<former.V:P:J:G:F:T:I>
+%<représenter.V:P:J:G:F:T:I>
+%<constituer.V:P:J:G:F:T:I>
+%<consister.V:P:+J:G:F:T:I>
+%<MIOT>
+%.
+%<classe.N>
+%<caste.N>
+%<catégorie.N>
+%<groupe.N>
+%<division.N>
+%<espèce.N>
+%<sorte.N>
+%<rac+e.N>
+%<ensemble.N>
+%<variété.N>
+%<type.N>
+%<medèle.N>
+%<pattern.N>
+%<famille.N>
+%<genre.N>
+%<collection.N>
+%<concept.N>
+%<partie.N>
+%<partition.N>
+%<DET>
+%*
+%<!MOT>
+f

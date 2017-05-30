@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/home/etudiant/treetagger/bin
+CMD=/home/etudiant/treetagger/cmd
+LIB=/home/etudiant/treetagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TOKENIZER=${CMD}/utf8-tokenize.perl
+TAGGER=${BIN}/tree-tagger
+ABBR_LIST=${LIB}/finnish-abbreviations-utf8
+PARFILE=${LIB}/finnish-utf8.par
+
+$TOKENIZER -a $ABBR_LIST $* |
+# tagging
+$TAGGER $OPTIONS $PARFILE
+

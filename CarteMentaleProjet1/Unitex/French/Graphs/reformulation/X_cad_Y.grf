@@ -1,0 +1,36 @@
+#Unigraph
+SIZE 1188 840
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 16711680
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+16
+"<E>" 70 200 1 2 
+"" 865 204 0 
+"<E>/<X_cad_Y>" 99 199 1 3 
+"<E>/<t1>" 122 94 1 4 
+"<!DIC>" 149 97 1 5 
+"<E>/</t1>" 215 96 1 15 
+"\" \"+à+," 334 61 1 7 
+"c'est-à-dire+savoir" 396 90 1 8 
+"\" \" +<MOT>+<DET>*.<!MOT>+<DET>" 490 89 1 9 
+"<E>/<t2>" 627 90 1 12 
+"à+," 324 126 1 11 
+"à+," 354 128 1 7 
+"<!DIC>" 649 40 1 13 
+"<E>/</t2>" 722 95 1 14 
+"<E>/</X_cad_Y>" 805 96 1 1 
+"\" \"+<MOT>" 253 82 2 6 10 

@@ -1,0 +1,14 @@
+Ceci est un texte de Test qui consistance à utiliser les quatres logiciels que sont Unitex, TagEN, 
+TreeTagger et YaTea pour l'extration des mots et termes du Corpus. Nous utilisations plusieurs phrases pour
+verifier que le Sequencage des phrasesse fait correctement. 
+Une relation de definition est la suivante:  définir To comme la Ti  To ,notamment la T2  (relation de meronymie) .  T1 le appeler  le T2.
+Dans cette phrase La voiture coute 5 euros, nous voulons extraitre 5 euros qui est une entité: monnaie.
+Les etapesn suivantes concernnent l'etiquetage morpho Syntaxique tu texte.
+
+Le maire de la ville a organisé une grande cérémonie le mardi 11 novembre 2014 pour modifier le nom de la rue 
+de Paris en rue du 11 novembre 1918.
+Ce mardi 11 novembre prouve que nous n'avons pas oublié les anciens combattants de notre ville.
+D'ailleurs  il  n'est  pas  impossible  qu'une  Maison  communale  du  11  novembre  voit  le  jour  pour  célébrer  le  11 
+novembre 2018..
+
+

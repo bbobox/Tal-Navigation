@@ -1,0 +1,9 @@
+./tagen :bio -t test.txt
+
+plutôt:
+./tagen -t :bio test.txt
+
+
+=> génère le fichier test.tag.txt, sous cette forme:
+
+protein	  4  8

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/home/touria/Bureau/ProjetM2Relation/projetTal-1.0.1/tree-tagger/bin
+CMD=/home/touria/Bureau/ProjetM2Relation/projetTal-1.0.1/tree-tagger/cmd
+LIB=/home/touria/Bureau/ProjetM2Relation/projetTal-1.0.1/tree-tagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TOKENIZER=${CMD}/utf8-tokenize.perl
+TAGGER=${BIN}/tree-tagger
+PARFILE=${LIB}/russian-utf8.par
+
+# do tokenization
+$TOKENIZER $* |
+$TAGGER $OPTIONS $PARFILE
